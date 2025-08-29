@@ -112,7 +112,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, scale: 0.9, y: 60 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 1.2, type: "spring" }}
-        className="mt-18 w-[60%]"
+        className="mt-18 w-[80%] md:w-[60%]"
       >
         <motion.div
           whileHover={{ scale: 1.03, rotate: 1 }}
