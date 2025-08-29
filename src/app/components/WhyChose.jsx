@@ -24,7 +24,7 @@ export default function WhyChoose() {
         whileInView={{ opacity: 1, rotateY: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="absolute bottom-0 left-0 md:left-[15%] w-full md:w-[50%]"
+        className="hidden md:visible absolute bottom-0 left-0 md:left-[15%] w-full md:w-[50%]"
       >
         <Image
           src="/app-ui.png"
