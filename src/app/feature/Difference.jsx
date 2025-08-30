@@ -70,7 +70,7 @@ export default function Difference() {
           viewport={{ once: true }}
           className="gilroy-m text-center text-4xl md:text-7xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2"
         >
-          Use cases by <span className="text-[#006DD3]">role</span>
+          What makes our AI <span className="text-[#006DD3]">different</span>
         </motion.h2>
 
           <div className="mt-4 md:mt-20 w-full flex flex-col md:flex-row justify-center items-center gap-0 md:gap-8 relative">

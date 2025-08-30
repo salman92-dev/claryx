@@ -80,3 +80,12 @@ body {
   background: linear-gradient(99.79deg, #FFFFFF 29.18%, rgba(255, 255, 255, 0.1) 100%);
   backdrop-filter: blur(23px)
 }
+.my-pagination {
+  
+}
+.my-pagination .swiper-pagination-bullet {
+  background: rgba(0,0,0,0.2);
+}
+.my-pagination .swiper-pagination-bullet-active {
+  background: rgba(0,0,0,1);
+}

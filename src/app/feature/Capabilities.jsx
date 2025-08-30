@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Subtitles } from "lucide-react";
 
 export default function Capabilities() {
   return (
@@ -24,9 +25,8 @@ export default function Capabilities() {
           Ai Financial Analysis
         </p>
         <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2 md:px-50">
-          The 
-          <span className="text-[#006DD3]"> Steps </span>
-          We Take to Get You There
+          Key AI 
+          <span className="text-[#006DD3]"> capabilities </span>
         </h2>
       </motion.div>
 
@@ -34,27 +34,30 @@ export default function Capabilities() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {[
           {
-            icon: "/f-6.svg",
-            title: "Ask questions naturally",
-            desc: `Link your Xero or QuickBooks account in under 5 minutes`,
-            w: "70%",
+            icon: "/k-1.png",
+            title: "Ask Questions, Get Answers",
+            subtitle : "Query your data conversationally",
+            desc: `Stop translating your thoughts into reports and formulas. Just ask: - “Why did our margins drop last quarter?” - “What’s driving the increase in operating expenses?” - “Which customers are most profitable?” - “Where are we losing money?” The AI CFO understands your intent and searches across all your data to find answers.`,
+            url : "[Try sample questions →]"
           },
           {
-            icon: "/f-5.svg",
-            title: "Get explanations, not just charts",
-            desc: `Every insight comes with the “why” behind it. Understand root causes, not just symptoms.`,
-            w: "90%",
+            icon: "/k-2.png",
+            title: "Anomaly Detection & Alerts",
+            subtitle : "Catch issues before they become problems",
+            desc: `Our AI CFO continuously monitors your financials and alerts you to: - Unusual expense patterns - Revenue irregularities - Cash flow concerns - Budget variances - Suspicious transactions Every alert includes: - What happened - The specific issue identified - Why it matters - Business impact explained - What to do - Recommended next steps`,
+            url: "[Learn more about alerts →]",
           },
           {
-            icon: "/f-7.svg",
-            title: "Receive actionable recommendations",
-            desc: `Our AI CFO doesn’t just identify problems - it tells you exactly how to fix them.`,
-            w: "100%",
+            icon: "/k-3.png",
+            title: "Root Cause Analysis",
+            subtitle : "Drill from symptom to source in seconds",
+            desc: `See a problem in your dashboard? Our AI CFO traces it back to the source: - Start with high-level metrics - Drill into account-level details - Identify specific transactions - Understand the complete story. No more hours of spreadsheet detective work. Get answers instantly.`,
+            url: "[Try sample questions →]",
           },
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="rounded-2xl px-8 py-12 pb-0 border-1 border-[#DCE2E3] hover:shadow-md transition"
+            className="rounded-2xl border-1 border-[#E0E7F5] hover:shadow-md transition p-2 bg-[#F4F8FC]"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -64,19 +67,27 @@ export default function Capabilities() {
             }}
             viewport={{ once: true }}
           >
-            <Image
+           <div className="bg-[#fff] rounded-2xl px-4 py-4 border-1 border-[#E0E7F5] h-full">
+             <Image
               src={card.icon}
               alt="logo"
-              width={24}
-              height={24}
-              className="mb-6 w-12"
+              width={654}
+              height={493}
+              className="mb-6 w-full"
             />
             <h3 className="text-[#060B13] text-xl gilroy-r tracking-[1.26px] font-semibold mb-2">
               {card.title}
             </h3>
-            <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-sm mb-6">
+            <h4 className="text-[#1D8EFF] text-lg gilroy-m mb-2">
+              {card.subtitle}
+            </h4>
+            <p className="text-[#464E68] gilroy-r mb-6">
               {card.desc}
             </p>
+            <a href="/" className="gilroy-b gradient-1 text-transparent bg-clip-text">
+             {card.url}
+            </a>
+           </div>
           </motion.div>
         ))}
       </div>

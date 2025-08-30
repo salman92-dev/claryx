@@ -35,21 +35,14 @@ const FreeTrial = () => {
           className="text-3xl md:text-4xl gilroy-m text-[#060B13] mb-4"
           variants={item}
         >
-          Try it for free
+            Ready to let AI transform your financial analysis?
         </motion.h2>
-
-        <motion.h3
-          className="text-2xl gilroy-m text-gray-800 mb-2"
-          variants={item}
-        >
-          Get started with Claryx
-        </motion.h3>
 
         <motion.p
           className="text-gray-600 mb-6"
           variants={item}
         >
-          Transform your financial reporting today. No credit card required.
+          Be among the first to experience the future of financial intelligence.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -67,14 +60,17 @@ const FreeTrial = () => {
           </motion.button>
 
           <motion.button
-            className="bg-white text-gray-800 px-6 py-3 rounded-full font-medium border hover:bg-gray-100 transition"
+            className="text-black gilroy-r"
             variants={item}
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
           >
-            Book A Demo
+            No credit card required
           </motion.button>
         </motion.div>
+        <p className='gilroy-m text-lg text-black mt-5'>
+            <span className='gradient-1 text-transparent bg-clip-text'>Questions?</span> Chat with us | hello@claryx.ai
+        </p>
       </motion.div>
 
       {/* Right Image with layered animation */}
