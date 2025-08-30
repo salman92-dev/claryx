@@ -71,7 +71,7 @@ body {
   font-family: inter-r;
 }
 .gradient-1 {
-  background: linear-gradient(0deg, #1D4EFF 0%, #24B6FF 100%);
+  background-image: linear-gradient(0deg, #1D4EFF 0%, #24B6FF 100%);
 }
 .gradient-2 {
   background: linear-gradient(0deg, #2082FF 0%, #27EBFF 100%);

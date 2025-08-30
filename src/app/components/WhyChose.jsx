@@ -24,10 +24,10 @@ export default function WhyChoose() {
         whileInView={{ opacity: 1, rotateY: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="hidden md:visible absolute bottom-0 left-0 md:left-[15%] w-full md:w-[50%]"
+        className="hidden md:block absolute bottom-[17rem] left-0 md:left-[26%] w-full md:w-[48%]"
       >
         <Image
-          src="/app-ui.png"
+          src="/laptop-3.png"
           alt="App UI"
           width={300}
           height={600}

@@ -18,7 +18,7 @@ const staggerParent = {
 const SupportSection = () => {
   return (
     <motion.section
-      className="flex flex-wrap items-center justify-between px-8 md:px-26 py-16 bg-white"
+      className="flex flex-wrap items-end justify-between px-8 md:px-26 py-16 bg-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -105,9 +105,9 @@ const SupportSection = () => {
         variants={fadeInUp}
       >
         <Image
-          src="/mobile.png"
+          src="/laptop-2.png"
           alt="Phone mockup"
-          className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg rounded-xl"
+          className="w-full rounded-xl md:mb-30"
           width={936}
           height={1366}
         />
