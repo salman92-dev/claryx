@@ -18,7 +18,7 @@ export default function MegaMenuNavbar() {
       mega: [
         {
           title: "Clothing",
-          links: ["Shirts", "Jeans", "Jackets", "Shoes"],
+          links: ["Shirts", "Jeans", "Shoes"],
         }
       ],
     },

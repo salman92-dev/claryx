@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function StartUsing() {
+export default function Transform() {
   return (
     <section className="md:px-36 px-6 py-10 rounded-2xl my-12"
     style={{backgroundImage : 'url(/bg-1.png)', backgroundSize : 'cover', backgroundPosition : 'center'}}
@@ -26,7 +26,7 @@ export default function StartUsing() {
           Ai Financial Analysis
         </p>
         <h2 className="gilroy-m text-4xl md:text-[3.3rem] !leading-[130%] tracking-[-1.97px] text-white mt-2">
-          Start using AI Financial Analysis today
+          Ready to transform your practice?
         </h2>
       </motion.div>
 
@@ -34,19 +34,22 @@ export default function StartUsing() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {[
           {
-            title: "Ask questions naturally",
-            desc: `Link your Xero or QuickBooks account in under 5 minutes`,
-            url : 'Start 14-day free trial'
+            title: "See Claryx in action",
+            desc: `Get a personalized demo showing how Claryx works for firms like yours.`,
+            url : 'Book demo',
+            extra : "30 minutes, no obligation",
           },
           {
-            title: "Get explanations, not just charts",
-            desc: `Every insight comes with the “why” behind it. Understand root causes, not just symptoms.`,
-            url : 'Book a demo'
+            title: "Try it free",
+            desc: `Test Claryx with a few clients risk-free for 14 days.`,
+            url : 'Start free trial',
+            extra : "No credit card required"
           },
           {
-            title: "Receive actionable recommendations",
-            desc: `Our AI CFO doesn’t just identify problems - it tells you exactly how to fix them.`,
-            url: 'Visit resource center',
+            title: "Talk to a specialist",
+            desc: `Have specific questions? Our team understands accounting practices.`,
+            url: 'Chat Now',
+            extra : "hello@claryx.ai"
           },
         ].map((card, i) => (
           <motion.div
@@ -67,9 +70,12 @@ export default function StartUsing() {
             <p className="text-[#fff] gilroy-r mb-6">
               {card.desc}
             </p>
-            <button className="bg-white rounded-full py-3 px-6 text-black">
+            <div className="flex flex-col md:flex-row gap-2 md:items-center">
+                <button className="bg-white rounded-full py-3 px-6 text-black">
                 {card.url}
-            </button>
+               </button>
+               <p className="gilroy-m text-sm text-white">{card.extra}</p>
+            </div>
           </motion.div>
         ))}
       </div>

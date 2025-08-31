@@ -21,7 +21,7 @@ const HeroSection = () => {
     <section
       className="flex flex-col items-center px-2 md:px-28 mt-4 md:mt-8 rounded-2xl relative border-1 border-[#D8D8DB] overflow-hidden"
       style={{
-        backgroundImage: "url(/hero-bg.svg)",
+        backgroundImage: "url(/hero-bg.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import MegaMenuNavbar from "./layout/Navbar";
+import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 
 const textContainer = {
@@ -31,13 +31,13 @@ const HeroSection = () => {
         initial={{ opacity: 0, x: -80 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute bottom-[-1rem] md:bottom-[-10rem] left-2 md:left-14 w-[33%]"
+        className="absolute bottom-30 md:bottom-80 left-2 md:left-30 w-[10%]"
       >
         <motion.div
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Image src="/hero-img-1.png" alt="img" width={851} height={965} />
+          <Image src="/c-1.png" alt="img" width={851} height={965} />
         </motion.div>
       </motion.div>
 
@@ -46,13 +46,13 @@ const HeroSection = () => {
         initial={{ opacity: 0, x: 80 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="absolute bottom-[-2rem] right-2 md:right-8 w-[33%]"
+        className="absolute bottom-34 md:bottom-100 right-6 md:right-40 w-[10%]"
       >
         <motion.div
           animate={{ y: [0, 20, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Image src="/hero-img-2.png" alt="img" width={851} height={965} />
+          <Image src="/c-2.png" alt="img" width={851} height={965} />
         </motion.div>
       </motion.div>
 
@@ -63,38 +63,43 @@ const HeroSection = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="w-full"
       >
-        <MegaMenuNavbar />
+        <Navbar />
       </motion.div>
-
-      {/* Badge Text */}
-      <motion.p
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
-      >
-        <Image className="w-3" src="/favicon.svg" alt="favicon" width={24} height={24} />
-        Best Financial Management
-      </motion.p>
 
       {/* Heading */}
       <motion.div
         variants={textContainer}
         initial="hidden"
         animate="show"
-        className="gilroy-m text-[#060B13] text-4xl md:text-6xl mt-2 text-center !leading-[150%]"
+        className="gilroy-m text-[#060B13] text-3xl md:text-6xl mt-2 text-center !leading-[150%] max-md:px-10 mt-12 md:mt-20"
       >
         <motion.h1 variants={textItem}>
-          All-in-one reporting, dashboards
-        </motion.h1>
-        <motion.h1 variants={textItem}>
-          and{" "}
-          <span className="gradient-2 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1]">
-            Ai insights
+          <span className="gradient-2 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
+            Solution
           </span>
+          For Accounting Firms
+        </motion.h1>
+        <motion.h1 variants={textItem}> 
         </motion.h1>
       </motion.div>
-
+      <motion.h3
+      initial = {{opacity : 0, filter : 'blur(12px)', y : 20}}
+      whileInView={{opacity:1, filter:'blur(0)', y:0}}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+      
+      className="text-[#060B13] gilroy-m text-2xl md:text-4xl lg:px-60 mt-2 text-center"
+      >
+        Transform your practice with AI-powered financial intelli-gence
+      </motion.h3>
+      <motion.h3
+      initial = {{opacity : 0, filter : 'blur(12px)', y : 20}}
+      whileInView={{opacity:1, filter:'blur(0)', y:0}}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+      
+      className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg md:text-xl lg:px-60 mt-2 text-center"
+      >
+        Manage more clients. Deliver more value. Work less hours.
+      </motion.h3>
       {/* Subtext */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
@@ -102,10 +107,16 @@ const HeroSection = () => {
         transition={{ duration: 0.7, delay: 1 }}
         className="text-center text-[#909090] gilroy-r text-base mt-6 max-w-2xl"
       >
-        Streamline your business's financial management with our intuitive,
-        scalable SaaS platform. Designed for U.S. enterprises, our solutions
-        simplify complex processes.
+        Claryx helps accounting firms scale their advisory services, automate client re- porting, and deliver insights that make clients think you’re a genius.
       </motion.p>
+      <div className="flex items-center gap-2 mt-6">
+        <button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition">
+               Start Free Trial
+        </button>
+         <button className="bg-white text-black py-2.5 px-6 rounded-full hover:opacity-90 transition">
+               Book a Demo
+        </button>
+      </div>
 
       {/* Laptop Image */}
       <motion.div
@@ -118,7 +129,7 @@ const HeroSection = () => {
           whileHover={{ scale: 1.03, rotate: 1 }}
           transition={{ type: "spring", stiffness: 120 }}
         >
-          <Image src="/laptop.png" alt="laptop" width={1322} height={772} />
+          <Image src="/laptop-3.png" alt="laptop" width={1322} height={772} />
         </motion.div>
       </motion.div>
     </section>
