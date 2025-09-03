@@ -23,7 +23,7 @@ export default function Limit() {
           />
           Ai Financial Analysis
         </p>
-        <h2 className="gilroy-m text-center text-2xl md:text-3xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2">
+        <h2 className="gilroy-m text-center text-2xl md:text-3xl !leading-[130%] text-[#060B13] mt-2">
           Need more than 50 companies?
         </h2>
         <p className="gilroy-r text-xl md:text-2xl text-[#454140] md:px-40">
