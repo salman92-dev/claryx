@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function Transform() {
+export default function WhatIsMissing() {
   return (
     <section className="xl:px-36 px-6 py-10 rounded-2xl my-12"
     style={{backgroundImage : 'url(/bg-1.png)', backgroundSize : 'cover', backgroundPosition : 'center'}}
@@ -26,7 +26,7 @@ export default function Transform() {
           Ai Financial Analysis
         </p>
         <h2 className="gilroy-m text-4xl md:text-[3.3rem] !leading-[130%] tracking-[-1.97px] text-white mt-2">
-          Ready to transform your practice?
+          Ready to see what you’re missing?
         </h2>
       </motion.div>
 
@@ -34,27 +34,24 @@ export default function Transform() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {[
           {
-            title: "See Claryx in action",
-            desc: `Get a personalized demo showing how Claryx works for firms like yours.`,
-            url : 'Book demo',
-            extra : "30 minutes, no obligation",
+            title: "Start your free trial today",
+            desc: `14 days. All features. No credit card.`,
+            url : 'Start Free Trial',
           },
           {
-            title: "Try it free",
-            desc: `Test Claryx with a few clients risk-free for 14 days.`,
-            url : 'Start free trial',
-            extra : "No credit card required"
+            title: "Get a personalized demo",
+            desc: `See Claryx in action with your industry’s data`,
+            url : 'Book 15-min demo',
           },
           {
-            title: "Talk to a specialist",
-            desc: `Have specific questions? Our team understands accounting practices.`,
-            url: 'Chat Now',
-            extra : "hello@claryx.ai"
+            title: "Questions? We’re here to help",
+            desc: `hello@claryx.ai`,
+            url: 'Live Chat',
           },
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="py-2 pb-0 transition"
+            className="py-2 transition hover:bg-white/10 p-4 rounded-2xl"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -74,7 +71,6 @@ export default function Transform() {
                 <button className="bg-white rounded-full py-3 px-6 text-black">
                 {card.url}
                </button>
-               <p className="gilroy-m text-sm text-white">{card.extra}</p>
             </div>
           </motion.div>
         ))}

@@ -4,39 +4,45 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "How long does setup take?",
+    question: "How does the “additional company” pricing work?",
     answer:
-      "Most firms are up and running in under an hour. Bulk client onboarding typically takes 1–2 days for 50+ clients.",
+      "Most firms are up and running in under an hour. Bulk client onboarding typi- cally takes 1-2 days for 50+ clients.",
   },
   {
-    question: "Do clients need their own accounts?",
-    answer:
-      "No, clients don’t need separate accounts. You control access centrally and can share reports securely without requiring clients to log into a new system.",
+    question: "What if my needs change?",
+    answer: "You can ask about metrics, anomalies, comparisons, forecasts, and more. The AI understands natural language.",
   },
   {
-    question: "What about data security?",
-    answer:
-      "All data is encrypted in transit and at rest. We use industry-standard security protocols and role-based permissions to ensure client information remains protected.",
+    question: "Is there a setup fee?",
+    answer: "Claryx adapts to your sector's benchmarks, seasonality, and KPIs for contextual accuracy.",
   },
   {
-    question: "Can we customize for each client?",
-    answer:
-      "Yes. You can set up custom templates, branding, and reporting rules for each client so every report feels tailored while still being automated.",
+    question: "What’s the benefit of annual billing?",
+    answer: "Your data is never used to train our models. Privacy and compliance are always ensured.",
   },
   {
-    question: "What if we already have reporting tools?",
-    answer:
-      "Our platform integrates with most existing accounting and reporting systems. You can either supplement your current tools or fully replace them depending on your needs.",
+    question: "I’m an accountant. How does this work for my practice?",
+    answer: "Yes, you can export detailed reports and insights in multiple formats including PDF and Excel.",
   },
   {
-    question: "How do we transition clients?",
-    answer:
-      "Transition is simple. Import your existing client data, map reports, and we’ll guide you through a step-by-step onboarding process so clients experience no disruption.",
+    question: "What happens after the free trial?",
+    answer: "Most queries return results in under 2 seconds, even for complex analyses.",
+  },
+  {
+    question: "How is this different from other tools?",
+    answer: "Most queries return results in under 2 seconds, even for complex analyses.",
+  },
+   {
+    question: "What integrations do you support?",
+    answer: "Most queries return results in under 2 seconds, even for complex analyses.",
+  },
+   {
+    question: "Is my data secure?",
+    answer: "Most queries return results in under 2 seconds, even for complex analyses.",
   },
 ];
 
-
-export default function CommonFAQ() {
+export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (index) => {
@@ -44,15 +50,16 @@ export default function CommonFAQ() {
   };
 
   return (
-    <section className="w-full px-4 xl:px-20 py-4 bg-white">
+    <section className="w-full px-4 md:px-20 py-4 bg-white">
       <div className="flex flex-col md:flex-row justify-between gap-12">
         {/* Left: Heading */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-6xl gilroy-m leading-tight text-black mb-4">
-            Common questions<br /> from firms
+            Frequently <br /> asked questions
           </h2>
           <p className="text-[#454140] gilroy-r text-lg md:text-lg">
-            For any unanswered questions, reach out to our support team via email. We'll respond as soon as possible to assist you.
+            For any unanswered questions, reach out to our support team via email.
+            We’ll respond as soon as possible to assist you.
           </p>
         </div>
 
@@ -69,7 +76,7 @@ export default function CommonFAQ() {
                 className="w-full flex justify-between items-center text-left cursor-pointer"
                 onClick={() => toggle(index)}
               >
-                <h3 className="gilroy-b  text-base md:text-lg text-[#120A0B]">
+                <h3 className="gilroy-m text-base md:text-lg text-[#120A0B]">
                   {faq.question}
                 </h3>
                 <motion.span

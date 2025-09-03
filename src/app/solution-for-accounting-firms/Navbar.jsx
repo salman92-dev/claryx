@@ -82,12 +82,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-16 text-[#505050] text-base">
+          <div className="hidden md:flex items-center md:gap-8 xl:gap-16 text-[#505050] text-base">
             {menuItems.map((item) => (
               <Link
                 key={item.label}
                 href={linkHref(item.label)}
-                className="gilroy-m text-[#909090] text-base hover:text-black transition duration-200"
+                className="gilroy-m text-[#909090] md:text-xs lg:text-base hover:text-black transition duration-200"
               >
                 {item.label}
               </Link>

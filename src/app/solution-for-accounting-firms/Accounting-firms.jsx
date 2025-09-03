@@ -93,7 +93,7 @@ export default function AccountingFirms() {
 
 
   return (
-    <section className="md:px-36 px-4 py-6 md:py-0 max-sm:px-4">
+    <section className="xl:px-36 px-4 py-6 md:py-0 max-sm:px-4">
       {/* Heading Section */}
       <motion.div
         className="text-center mb-14 flex flex-col items-center"
