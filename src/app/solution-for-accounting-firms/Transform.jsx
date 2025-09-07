@@ -54,7 +54,7 @@ export default function Transform() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="py-2 pb-0 transition"
+            className="py-2 pb-0 transition flex flex-col items-center"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -64,17 +64,17 @@ export default function Transform() {
             }}
             viewport={{ once: true }}
           >
-            <h3 className="text-[#fff] text-xl gilroy-m tracking-[0.44px] mb-2">
+            <h3 className="text-[#fff] text-2xl lg:text-3xl gilroy-m font-medium tracking-[0.44px] mb-2">
               {card.title}
             </h3>
-            <p className="text-[#fff] gilroy-r mb-6">
+            <p className="!text-[#fff] text-center gilroy-r mb-4 text-sm">
               {card.desc}
             </p>
+            <p className="gilroy-m text-sm !text-white mb-2">{card.extra}</p>
             <div className="flex flex-col md:flex-row gap-2 md:items-center">
                 <button className="bg-white rounded-full py-3 px-6 text-black">
                 {card.url}
                </button>
-               <p className="gilroy-m text-sm text-white">{card.extra}</p>
             </div>
           </motion.div>
         ))}

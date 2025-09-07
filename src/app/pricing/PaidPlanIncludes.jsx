@@ -15,11 +15,11 @@ export default function PaidPlanIncludes() {
       title: "AI-Powered Intelligence",
       desc: `
       <div class="space-y-3">
-        <p>• Chat with your dataAsk<br/><span class="text-sm text-[#909090] gilroy-m text-lg">“Why did margins drop?” Get instant answers</span></p>
-        <p>• Smart anomaly detection<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI spots issues and explains them in plain English</span></p>
-        <p>• Automated narratives<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports that write themselves</span></p>
-        <p>• Root cause analysis<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Drill from summary to transaction instantly</span></p>
-        <p>• Action recommendations<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI tells you what to do next</span></p>
+        <p>➜ Chat with your dataAsk<br/><span class="text-sm text-[#909090] gilroy-m text-lg">“Why did margins drop?” Get instant answers</span></p>
+        <p>➜ Smart anomaly detection<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI spots issues and explains them in plain English</span></p>
+        <p>➜ Automated narratives<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports that write themselves</span></p>
+        <p>➜ Root cause analysis<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Drill from summary to transaction instantly</span></p>
+        <p>➜ Action recommendations<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI tells you what to do next</span></p>
       </div>
       `,
     },
@@ -28,11 +28,11 @@ export default function PaidPlanIncludes() {
       title: "Professional Reporting",
       desc: `
       <div class="space-y-3">
-        <p>• Unlimited custom dashboards<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Build exactly what you need</span></p>
-        <p>• Automated scheduling<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports delivered on your schedule</span></p>
-        <p>• White-label everything<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Your brand, your reports</span></p>
-        <p>• Role-based views<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Different dashboards for different teams</span></p>
-        <p>• Executive summaries<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Board-ready in seconds</span></p>
+        <p>➜ Unlimited custom dashboards<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Build exactly what you need</span></p>
+        <p>➜ Automated scheduling<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports delivered on your schedule</span></p>
+        <p>➜ White-label everything<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Your brand, your reports</span></p>
+        <p>➜ Role-based views<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Different dashboards for different teams</span></p>
+        <p>➜ Executive summaries<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Board-ready in seconds</span></p>
       </div>
       `,
     },
@@ -41,10 +41,10 @@ export default function PaidPlanIncludes() {
       title: "Real-time Monitoring",
       desc: `
       <div class="space-y-3">
-        <p>• Daily data sync<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Always up to date</span></p>
-        <p>• Intelligent alerts<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Get notified when things change</span></p>
-        <p>• Custom KPIs<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Track what matters to you</span></p>
-        <p>• Multi-channel delivery<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Email, SMS, or in-app</span></p>
+        <p>➜ Daily data sync<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Always up to date</span></p>
+        <p>➜ Intelligent alerts<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Get notified when things change</span></p>
+        <p>➜ Custom KPIs<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Track what matters to you</span></p>
+        <p>➜ Multi-channel delivery<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Email, SMS, or in-app</span></p>
       </div>
       `,
     },
@@ -53,11 +53,11 @@ export default function PaidPlanIncludes() {
       title: "AI-Powered Intelligence",
       desc: `
       <div class="space-y-3">
-        <p>• Chat with your dataAsk<br/><span class="text-sm text-[#909090] gilroy-m text-lg">“Why did margins drop?” Get instant answers</span></p>
-        <p>• Smart anomaly detection<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI spots issues and explains them in plain English</span></p>
-        <p>• Automated narratives<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports that write themselves</span></p>
-        <p>• Root cause analysis<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Drill from summary to transaction instantly</span></p>
-        <p>• Action recommendations<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI tells you what to do next</span></p>
+        <p>➜ Chat with your dataAsk<br/><span class="text-sm text-[#909090] gilroy-m text-lg">“Why did margins drop?” Get instant answers</span></p>
+        <p>➜ Smart anomaly detection<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI spots issues and explains them in plain English</span></p>
+        <p>➜ Automated narratives<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports that write themselves</span></p>
+        <p>➜ Root cause analysis<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Drill from summary to transaction instantly</span></p>
+        <p>➜ Action recommendations<br/><span class="text-sm text-[#909090] gilroy-m text-lg">AI tells you what to do next</span></p>
       </div>
       `,
     },
@@ -66,11 +66,11 @@ export default function PaidPlanIncludes() {
       title: "Professional Reporting",
       desc: `
       <div class="space-y-3">
-        <p>• Unlimited custom dashboards<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Build exactly what you need</span></p>
-        <p>• Automated scheduling<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports delivered on your schedule</span></p>
-        <p>• White-label everything<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Your brand, your reports</span></p>
-        <p>• Role-based views<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Different dashboards for different teams</span></p>
-        <p>• Executive summaries<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Board-ready in seconds</span></p>
+        <p>➜ Unlimited custom dashboards<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Build exactly what you need</span></p>
+        <p>➜ Automated scheduling<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Reports delivered on your schedule</span></p>
+        <p>➜ White-label everything<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Your brand, your reports</span></p>
+        <p>➜ Role-based views<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Different dashboards for different teams</span></p>
+        <p>➜ Executive summaries<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Board-ready in seconds</span></p>
       </div>
       `,
     },
@@ -79,10 +79,10 @@ export default function PaidPlanIncludes() {
       title: "Real-time Monitoring",
       desc: `
       <div class="space-y-3">
-        <p>• Daily data sync<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Always up to date</span></p>
-        <p>• Intelligent alerts<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Get notified when things change</span></p>
-        <p>• Custom KPIs<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Track what matters to you</span></p>
-        <p>• Multi-channel delivery<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Email, SMS, or in-app</span></p>
+        <p>➜ Daily data sync<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Always up to date</span></p>
+        <p>➜ Intelligent alerts<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Get notified when things change</span></p>
+        <p>➜ Custom KPIs<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Track what matters to you</span></p>
+        <p>➜ Multi-channel delivery<br/><span class="text-sm text-[#909090] gilroy-m text-lg">Email, SMS, or in-app</span></p>
       </div>
       `,
     },
@@ -132,7 +132,7 @@ export default function PaidPlanIncludes() {
                 <SwiperSlide key={i}>
                   <div
                     custom={i}
-                    className="bg-[#F5F6F9] rounded-2xl p-6 transition min-h-150"
+                    className="bg-[#F5F6F9] rounded-2xl p-6 transition min-h-150 shadow-lg shadow-blue-200"
                   >
                     <div className="w-12 h-12 mb-4 flex items-center justify-center text-blue-600 rounded-lg">
                       <Image
@@ -146,7 +146,7 @@ export default function PaidPlanIncludes() {
                     <h3 className="gilroy-m text-2xl md:text-4xl text-[#1a1a1a] mb-8">
                       {item.title}
                     </h3>
-                    <div className="text-[#000] gilroy-b text-lg md:text-xl mb-4" dangerouslySetInnerHTML={{__html : item.desc}}/>
+                    <div className="text-[#000] gilroy-b font-bold text-lg md:text-xl mb-4" dangerouslySetInnerHTML={{__html : item.desc}}/>
                   </div>
                 </SwiperSlide>
               ))}

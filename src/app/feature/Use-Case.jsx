@@ -98,7 +98,7 @@ export default function Usecase() {
               <motion.div
                 key={item.id}
                 whileHover={{ scale: 1.03 }}
-                className="md:mb-8 mb-4 p-6 rounded-2xl gradient-3 shadow-sm border border-white text-left" // Add margin between the boxes
+                className="md:mb-8 mb-4 p-6 rounded-2xl gradient-3 border border-white text-left shadow-[0px_16px_69px_0px_#00000040]" // Add margin between the boxes
               >
                 <Image
                   src={item.imageSrc}
@@ -136,7 +136,7 @@ export default function Usecase() {
               <motion.div
                 key={item.id}
                 whileHover={{ scale: 1.03 }}
-                className="mb-8 p-6 rounded-2xl gradient-3 shadow-sm border border-white text-left" // Add margin between the boxes
+                className="mb-8 p-6 rounded-2xl gradient-3 border border-white text-left shadow-[0px_16px_69px_0px_#00000040]" // Add margin between the boxes
               >
                 <Image
                   src={item.imageSrc}

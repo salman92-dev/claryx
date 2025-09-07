@@ -93,7 +93,7 @@ export default function AccountingFirms() {
 
 
   return (
-    <section className="xl:px-36 px-4 py-6 md:py-0 max-sm:px-4">
+    <section className="xl:px-36 sm:px-4 py-6 md:py-0">
       {/* Heading Section */}
       <motion.div
         className="text-center mb-14 flex flex-col items-center"
@@ -136,7 +136,7 @@ export default function AccountingFirms() {
                 <SwiperSlide key={i}>
                   <div
                     custom={i}
-                    className="bg-[#F5F6F9] rounded-2xl p-6 transition min-h-100"
+                    className="bg-[#F5F6F9] rounded-2xl p-6 transition min-h-105 shadow-lg shadow-blue-200 flex flex-col justify-between"
                   >
                     <div className="w-12 h-12 mb-4 flex items-center justify-center text-blue-600 rounded-lg">
                       <Image

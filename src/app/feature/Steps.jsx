@@ -60,7 +60,7 @@ export default function Steps() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="rounded-2xl px-8 py-12 pb-0 border-1 border-[#DCE2E3] hover:shadow-md transition"
+            className="rounded-2xl px-8 py-12 pb-0 border-1 border-[#DCE2E3] shadow-[-8px_35px_55px_0px_#0000001C] transition"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

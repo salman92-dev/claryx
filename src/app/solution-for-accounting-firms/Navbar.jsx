@@ -96,6 +96,9 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex gap-4">
+            <button className="bg-[#eeeeee] text-black py-2.5 px-6 rounded-full hover:opacity-90 transition">
+               Free Trial
+            </button>
             <button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition">
               Sign In
             </button>

@@ -106,7 +106,7 @@ export default function WhyUse() {
                   height={44}
                   className="w-10 mb-4"
                 />
-                <h3 className="gilroy-m text-lg text-[#00234B] pr-10">
+                <h3 className="inter-b text-lg text-[#00234B] pr-10">
                   {item.title}
                 </h3>
                 <h4 className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg">
@@ -144,7 +144,7 @@ export default function WhyUse() {
                   height={44}
                   className="w-10 mb-4"
                 />
-                <h3 className="gilroy-m text-lg text-[#00234B] pr-10">
+                <h3 className="inter-b text-lg text-[#00234B] pr-10">
                   {item.title}
                 </h3>
                 <h4 className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg">

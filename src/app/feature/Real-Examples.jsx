@@ -83,16 +83,6 @@ const RealExample = () => {
               Real examples from real businesses
             </h2>
           </motion.div>
-
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            className="mt-4 text-[#454140] giroy-r max-w-2xl w-full md:w-[46%]"
-          >
-            Dive into practical case studies that show what worked, what didn’t, and the lessons that can inspire your next big move.
-          </motion.p>
         </motion.div>
 
         {/* Cards Section */}

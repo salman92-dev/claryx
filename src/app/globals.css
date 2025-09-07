@@ -105,3 +105,6 @@ p{
   color :#464646 !important;
   font-family: inter-r !important;
 }
+.swiper-wrapper {
+  padding-block: 20px;
+}

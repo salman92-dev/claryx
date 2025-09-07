@@ -64,7 +64,7 @@ export default function Forecasting() {
         ].map((card, i) => (
             <motion.div
             key={i}
-            className="rounded-2xl w-full md:w-[32%] border border-[#E0E7F5] hover:shadow-md transition p-2 bg-[#F4F8FC] w-full max-w-sm"
+            className="rounded-2xl w-full md:w-[32%] border border-[#E0E7F5] shadow-[-8px_35px_55px_0px_#0000001C] transition p-2 bg-[#F4F8FC] w-full max-w-sm"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
