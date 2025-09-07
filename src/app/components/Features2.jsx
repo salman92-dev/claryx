@@ -18,7 +18,7 @@ const staggerContainer = {
 
 const Features = () => {
   return (
-    <section className="py-16 lg:py-24 px-6 lg:px-26 bg-white">
+    <section className="py-16 lg:py-24 lg:pt-10 px-6 lg:px-26 bg-white">
       {/* Header */}
       <motion.div
         initial="hidden"
@@ -29,7 +29,7 @@ const Features = () => {
       >
         <motion.p
           variants={fadeUp}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
+          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow"
         >
           <Image className="w-3" src="/favicon.svg" alt="favicon" width={24} height={24} />
           Ai Financial Analysis
@@ -60,14 +60,14 @@ const Features = () => {
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.4 }}
-            className="bg-[#F5F6F9] rounded-2xl overflow-hidden pt-20"
+            className="gradient-5 rounded-2xl overflow-hidden p-4"
           >
             <Image
               src="/f-9.png"
               alt="Manage deadlines with visual calendar integration"
               width={600}
               height={400}
-              className="w-[95%] mx-auto h-auto"
+              className="w-[100%] mx-auto h-auto"
             />
           </motion.div>
           <motion.div variants={staggerContainer}>
@@ -98,7 +98,7 @@ const Features = () => {
               <motion.div
                 key={i}
                 variants={fadeUp}
-                className="space-y-4 flex items-start gap-2 text-[#454140] gilroy-m text-xl mb-4 ml-[-1rem]"
+                className="flex items-start gap-2 text-[#454140] gilroy-m text-xl mb-4 ml-[-1rem]"
               >
                 <Image src={item.icon} alt="logo" width={70} height={70} />
                 <div>
@@ -124,9 +124,9 @@ const Features = () => {
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.4 }}
-            className="bg-[#F5F6F9] rounded-2xl overflow-hidden pt-30"
+            className="gradient-5 rounded-2xl overflow-hidden p-4"
           >
-            <Image src="/f-10.png" alt="Management Reporting" width={600} height={400} className="w-[95%] mx-auto h-auto" />
+            <Image src="/f-10.png" alt="Management Reporting" width={600} height={400} className="w-[100%] mx-auto h-auto" />
           </motion.div>
           <motion.div variants={staggerContainer}>
             <motion.h3 variants={fadeUp} className="gilroy-m text-2xl md:text-4xl !leading-[120%] text-[#120A0B] mb-4">
@@ -155,7 +155,7 @@ const Features = () => {
               <motion.div
                 key={i}
                 variants={fadeUp}
-                className="space-y-4 flex items-start gap-2 text-[#454140] gilroy-m text-xl mb-4 ml-[-1rem]"
+                className="flex items-start gap-2 text-[#454140] gilroy-m text-xl mb-4 ml-[-1rem]"
               >
                 <Image src={item.icon} alt="logo" width={70} height={70} />
                 <div>
@@ -180,9 +180,9 @@ const Features = () => {
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.4 }}
-            className="bg-[#F5F6F9] rounded-2xl overflow-hidden pt-30"
+            className="gradient-5 rounded-2xl overflow-hidden p-4"
           >
-            <Image src="/f-11.png" alt="Smart Alerts & Notifications" width={600} height={400} className="w-[95%] mx-auto h-auto" />
+            <Image src="/f-11.png" alt="Smart Alerts & Notifications" width={600} height={400} className="w-[100%] mx-auto h-auto" />
           </motion.div>
           <motion.div variants={staggerContainer}>
             <motion.h3 variants={fadeUp} className="gilroy-m text-2xl md:text-4xl !leading-[120%] text-[#120A0B] mb-4">
@@ -211,7 +211,7 @@ const Features = () => {
               <motion.div
                 key={i}
                 variants={fadeUp}
-                className="space-y-4 flex items-start gap-2 text-[#454140] gilroy-m text-xl mb-4 ml-[-1rem]"
+                className="flex items-start gap-2 text-[#454140] gilroy-m text-xl mb-4 ml-[-1rem]"
               >
                 <Image src={item.icon} alt="logo" width={70} height={70} />
                 <div>

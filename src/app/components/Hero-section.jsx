@@ -89,7 +89,7 @@ const HeroSection = () => {
         </motion.h1>
         <motion.h1 variants={textItem}>
           and{" "}
-          <span className="gradient-2 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1]">
+          <span className="gradient-1 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1]">
             Ai insights
           </span>
         </motion.h1>

@@ -74,7 +74,7 @@ const HeroSection = () => {
         className="gilroy-m text-[#060B13] text-3xl md:text-6xl mt-2 text-center !leading-[150%] max-md:px-10 mt-12 md:mt-20"
       >
         <motion.h1 variants={textItem}>
-          <span className="gradient-2 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
+          <span className="gradient-1 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
             Solution
           </span>
           For Accounting Firms

@@ -75,7 +75,7 @@ const HeroSection = () => {
       >
         <motion.h1 variants={textItem}>
           AI
-          <span className="gradient-2 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
+          <span className="gradient-1 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
             Financial
           </span>
           Analysis

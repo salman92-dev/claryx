@@ -24,7 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  font-family: inter-sb;
+}
 @font-face {
   font-family: gilroy-bold;
   src: url(/gilroy/Gilroy-Bold.ttf);
@@ -83,6 +85,9 @@ body {
 .gradient-4 {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #B4E1FF 49.52%, rgba(255, 255, 255, 0) 100%);
 }
+.gradient-5 {
+  background: linear-gradient(0deg, rgba(29, 78, 255, 0.2) 0%, rgba(36, 182, 255, 0.2) 100%);
+}
 .my-pagination .swiper-pagination-bullet {
   background: rgba(0,0,0,0.2);
 }
@@ -95,4 +100,8 @@ body {
 }
 .my-pagination2 .swiper-pagination-bullet-active {
   background: rgba(0,0,0,1);
+}
+p{
+  color :#464646 !important;
+  font-family: inter-r !important;
 }

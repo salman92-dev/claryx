@@ -65,7 +65,7 @@ export default function FeaturesSection() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="bg-[#F5F6F9] rounded-2xl p-8 pb-0 shadow-sm hover:shadow-md transition sticky top-10"
+            className="bg-[#F5F6F9] rounded-2xl p-8 pb-0 shadow-sm hover:shadow-md transition"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

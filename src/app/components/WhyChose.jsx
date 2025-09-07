@@ -82,7 +82,7 @@ export default function WhyChoose() {
           {/* Left Box */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-sm border border-white text-left sticky top-10"
+            className="w-full md:w-[40%] lg:w-[22%] shadow-[0px_16px_69px_0px_#00000040] p-6 rounded-2xl gradient-3 border border-white text-left sticky top-10"
           >
             <Image
               src="/t-1.svg"
@@ -102,7 +102,7 @@ export default function WhyChoose() {
           {/* Right Box */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-sm border border-white text-left sticky top-10"
+            className="w-full md:w-[40%] lg:w-[22%] shadow-[0px_16px_69px_0px_#00000040] p-6 rounded-2xl gradient-3 border border-white text-left sticky top-10"
           >
             <Image
               src="/t-1.svg"
@@ -133,7 +133,7 @@ export default function WhyChoose() {
           {/* Left Box */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-sm border border-white text-left sticky top-10"
+            className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-[0px_16px_69px_0px_#00000040] border border-white text-left sticky top-10"
           >
             <Image
               src="/t-1.svg"
@@ -154,7 +154,7 @@ export default function WhyChoose() {
           {/* Bottom Center Box */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="w-full md:w-[40%] lg:w-[46%] p-6  rounded-2xl gradient-3 shadow-sm border border-white text-left sticky top-12"
+            className="w-full md:w-[40%] lg:w-[46%] p-6  rounded-2xl gradient-3 shadow-[0px_16px_69px_0px_#00000040] border border-white text-left sticky top-12"
           >
             <Image
               src="/t-1.svg"
@@ -175,7 +175,7 @@ export default function WhyChoose() {
           {/* Right Box */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-sm border border-white text-left"
+            className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-[0px_16px_69px_0px_#00000040] border border-white text-left"
           >
             <Image
               src="/t-1.svg"

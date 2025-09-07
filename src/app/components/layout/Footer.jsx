@@ -34,7 +34,7 @@ const   Footer =() => {
             </div>
             <div className="w-full md-[25%]">
                 <h3 className="inter-m font-medium text-[#000] text-xl tracking-[-0.8px]">Useful Links</h3>
-                <div className="flex flex-col gap-4 text-[#909090] mt-6 gilroy-m">
+                <div className="flex flex-col gap-4 text-[#464646] mt-6 gilroy-m">
                     <a href="/">AI Financial Analysis</a>
                     <a href="/">Real-time Dashboards</a>
                     <a href="/">Management Reporting</a>
