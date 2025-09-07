@@ -44,7 +44,7 @@ const   Footer =() => {
             <div className="w-full md-[38%]">
                 <h3 className="inter-m font-medium text-[#000] text-xl tracking-[-0.8px]">Subscribe our newsletter</h3>
                 <div className="relative mt-6">
-                    <input type="text" placeholder="First Name" className="p-5 rounded-full border border-[#E0E7F5] w-full gilroy-m text-[#909090]" />
+                    <input type="text" name="email" placeholder="Email" autoComplete="true" className="p-5 rounded-full border border-[#E0E7F5] w-full gilroy-m text-[#909090]" />
                     <button className="absolute top-2 right-2 gradient-1 py-3 px-8 text-[#fff] rounded-full gilroy-m">Subscribe</button>
                 </div>
                 <div className="flex items-center justify-between mt-8">
