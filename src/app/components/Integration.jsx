@@ -25,7 +25,7 @@ const IntegrationsSection = () => {
       <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left Content */}
         <motion.div
-          className="max-w-xl z-10"
+          className="max-w-xl z-10 pr-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
