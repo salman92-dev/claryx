@@ -54,7 +54,30 @@ const IntegrationsSection = () => {
             Claryx integrates directly with leading accounting platforms. Making it easy to get
             started, stay connected and get more out of your financial data.
           </motion.p>
-
+          <div className="max-md:w-full flex flex-col items-start gap-4 mb-2 mt-4">
+          <div className="flex gap-24">
+            <motion.img
+              src="/quickbooks.svg"
+              alt="QuickBooks"
+              className="w-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              viewport={{ once: true }}
+            />
+            <motion.img
+              src="/xero.svg"
+              alt="Xero"
+              className="w-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              viewport={{ once: true }}
+            />
+          </div>
+          <span className="gilroy-m text-3xl !leading-[80%] text-white">Online | Xero</span>
+          <span className="gilroy-m text-3xl !leading-[80%] text-white">QuickBooks</span>
+        </div>
           <motion.button
             className="bg-white text-black gilroy-m font-semibold px-6 py-3 rounded-full  hover:bg-gray-100 transition mt-8"
             variants={fadeUp}
@@ -89,32 +112,8 @@ const IntegrationsSection = () => {
         variants={fadeUp}
         custom={4}
       >
-        <div className="max-md:w-full flex flex-col items-start gap-4 mb-2">
-          <div className="flex gap-24">
-            <motion.img
-              src="/quickbooks.svg"
-              alt="QuickBooks"
-              className="w-8"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              viewport={{ once: true }}
-            />
-            <motion.img
-              src="/xero.svg"
-              alt="Xero"
-              className="w-8"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              viewport={{ once: true }}
-            />
-          </div>
-          <span className="gilroy-m text-3xl !leading-[80%] text-white">Online | Xero</span>
-          <span className="gilroy-m text-3xl !leading-[80%] text-white">QuickBooks</span>
-        </div>
 
-        <motion.p
+        <motion.h5
           className="italic text-2xl text-white max-md:pr-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -123,7 +122,7 @@ const IntegrationsSection = () => {
         >
           Excel / Google Sheets / QuickBooks Desktop / MYOB / Sage <br />
           <span className="font-semibold">Coming Soon</span>
-        </motion.p>
+        </motion.h5>
       </motion.div>
     </section>
   );
