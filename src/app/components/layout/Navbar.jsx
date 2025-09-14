@@ -17,8 +17,12 @@ export default function MegaMenuNavbar() {
       label: "Products",
       mega: [
         {
-          title: "Clothing",
-          links: ["Shirts", "Jeans", "Shoes"],
+          title: "Features ",
+          links: ["AI Financial Analysis"],
+        },
+        {
+          title: "Features ",
+          links: ["Management Reporting"],
         }
       ],
     },
@@ -26,8 +30,7 @@ export default function MegaMenuNavbar() {
       label: "Customer",
       mega: [
         {
-          title: "Design",
-          links: ["UI/UX", "Web Design", "Branding"],
+          links: ["Solutions ", "Accountants "],
         }
       ],
     },
@@ -160,7 +163,7 @@ export default function MegaMenuNavbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-4 bg-white shadow-xl rounded-xl p-6 grid grid-cols-3 gap-6 w-[min(600px,90vw)] z-50"
+                      className="absolute top-full left-0 mt-4 bg-white shadow-xl rounded-xl p-6 grid grid-cols-3 gap-6 w-[min(400px,50vw)] z-50"
                     >
                       {item.mega.map((col) => (
                         <div key={col.title}>
