@@ -18,7 +18,7 @@ const staggerParent = {
 const SupportSection = () => {
   return (
     <motion.section
-      className="flex flex-wrap items-end justify-between px-8 md:px-26 py-16 bg-white"
+      className="flex flex-wrap items-end justify-between px-0 md:px-8 lg:px-26 my-12 md:my-16 bg-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -29,20 +29,6 @@ const SupportSection = () => {
         className="w-full lg:w-1/2 max-w-2xl"
         variants={fadeInUp}
       >
-        <motion.p
-          className="flex items-center w-fit gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
-          variants={fadeInUp}
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
-
         <motion.h1
           className="gilroy-m text-4xl md:text-6xl !leading-[110%] tracking-[-1.97px] text-[#060B13] mt-2 mb-8"
           variants={fadeInUp}

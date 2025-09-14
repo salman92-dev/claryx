@@ -1,7 +1,9 @@
+'use client'
+import { motion } from "framer-motion";
 import Image from "next/image";
 const   Footer =() => {
     return (
-        <footer className="flex flex-col md:flex-row justify-between gap-10 md:gap-0 py-20 px-6 mt-20">
+        <footer className="flex flex-col md:flex-row justify-between gap-10 pb-2 md:gap-0 px-0 md:px-4 mt-16">
             <div className="w-full md-[30%]">
                 <Image className="w-32" src="/logo.png" alt="" width={237} height={64} />
                 <ul className="space-y-4 text-[#000] max-sm:text-sm mt-6">
@@ -45,7 +47,10 @@ const   Footer =() => {
                 <h3 className="inter-m font-medium text-[#000] text-xl tracking-[-0.8px]">Subscribe our newsletter</h3>
                 <div className="relative mt-6">
                     <input type="text" name="email" placeholder="Email" autoComplete="true" className="p-5 rounded-full border border-[#E0E7F5] w-full gilroy-m text-[#909090]" />
-                    <button className="absolute top-2 right-2 gradient-1 py-3 px-8 text-[#fff] rounded-full gilroy-m">Subscribe</button>
+                    <motion.button className="absolute top-2 right-2 gradient-1 py-3 px-8 text-[#fff] rounded-full gilroy-m"
+                    whileHover={{scale : 1.1, rotate : 2}}
+                    whileTap={{scale : 0.9}}
+                    >Subscribe</motion.button>
                 </div>
                 <div className="flex items-center justify-between mt-8">
                     <h3 className="inter-m font-medium text-[#000] text-xl tracking-[-0.8px]">Follow Us</h3>

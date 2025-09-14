@@ -37,7 +37,7 @@ function LogoStrip({ items }) {
 
 export default function LogosMarquee() {
   return (
-    <section className="w-full py-10 md:py-14 bg-white">
+    <section className="w-full my-10 md:my-14 bg-white">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="inter-r text-center text-2xl md:text-3xl tracking-[-1.97px] text-[#060B13]">
           Trusted over 2k+ company

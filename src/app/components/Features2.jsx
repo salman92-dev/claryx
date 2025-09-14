@@ -18,7 +18,7 @@ const staggerContainer = {
 
 const Features = () => {
   return (
-    <section className="py-16 lg:py-24 lg:pt-10 px-6 lg:px-26 bg-white">
+    <section className="px-0 md:px-6 my-12 md:my-16 lg:px-26 bg-white">
       {/* Header */}
       <motion.div
         initial="hidden"
@@ -80,12 +80,12 @@ const Features = () => {
 
             {[
               {
-                icon: "/logo-7.svg",
+                icon: "/logo-6.svg",
                 title: "Role-based views",
                 desc: "Different dashboards for CFOs, Controllers, and Operational teams",
               },
               {
-                icon: "/logo-8.svg",
+                icon: "/logo-7.svg",
                 title: "One-click drill downs",
                 desc: "Navigate from summary to source transaction instantly",
               },
@@ -137,17 +137,17 @@ const Features = () => {
             </motion.p>
             {[
               {
-                icon: "/logo-7.svg",
+                icon: "/logo-9.svg",
                 title: "Fast",
                 desc: "Craft management reports for print or web in minutes, not hours",
               },
               {
-                icon: "/logo-8.svg",
+                icon: "/logo-10.svg",
                 title: "Intelligent",
                 desc: "AI-generated narratives explain every variance and trend automatically",
               },
               {
-                icon: "/logo-8.svg",
+                icon: "/logo-11.svg",
                 title: "Automated",
                 desc: "Put your reporting on autopilot. Schedule the delivery of timely reports",
               },
@@ -193,17 +193,17 @@ const Features = () => {
             </motion.p>
             {[
               {
-                icon: "/logo-7.svg",
+                icon: "/logo-12.svg",
                 title: "Anomaly detection with custom thresholds",
                 desc: "AI spots unusual patterns and alerts you on KPIs that matter.",
               },
               {
-                icon: "/logo-8.svg",
+                icon: "/logo-13.svg",
                 title: "Intelligent explanations",
                 desc: "Every alert includes context and suggested actions, not just numbers.",
               },
               {
-                icon: "/logo-8.svg",
+                icon: "/logo-14.svg",
                 title: "Multi-channel delivery",
                 desc: "Get notified via email, SMS, or in-app based on urgency.",
               },

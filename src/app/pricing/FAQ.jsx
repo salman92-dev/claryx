@@ -50,7 +50,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full px-4 md:px-20 py-4 bg-white">
+    <section className="w-full px-0 md:px-4 lg:px-20 py-4 bg-white my-12 md:my-16">
       <div className="flex flex-col md:flex-row justify-between gap-12">
         {/* Left: Heading */}
         <div className="md:w-1/2">

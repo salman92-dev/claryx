@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function FeaturesSection() {
   return (
-    <section className="md:px-36 px-4 py-6 md:py-0 max-sm:px-4">
+    <section className="lg:px-36 px-4 py-6 my-12 md:my-16 md:py-0 max-sm:px-0">
       {/* Heading Section */}
       <motion.div
         className="text-center mb-14 flex flex-col items-center"
@@ -13,7 +13,7 @@ export default function FeaturesSection() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20">
+        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-4 md:mt-8">
           <Image
             className="w-3"
             src="/favicon.svg"
@@ -82,14 +82,14 @@ export default function FeaturesSection() {
               height={24}
               className="mb-4 w-10"
             />
-            <h3 className="text-[#060B13] text-xl gilroy-m tracking-[1.26px] font-semibold mb-2">
+            <h3 className="text-[#060B13] text-2xl md:text-3xl gilroy-m tracking-[1.26px] font-semibold mb-2">
               {card.title}
             </h3>
-            <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-sm mb-6">
+            <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-base mb-6">
               {card.desc}
             </p>
             <div className={`w-[${card.w}] mx-auto`}>
-              <Image src={card.img} alt={card.title} width={400} height={200} />
+              <Image src={card.img} alt={card.title} width={400} height={200} className="w-full" />
             </div>
           </motion.div>
         ))}

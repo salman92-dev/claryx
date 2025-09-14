@@ -19,7 +19,7 @@ const textItem = {
 const HeroSection = () => {
   return (
     <section
-      className="flex flex-col items-center px-2 xl:px-28 mt-4 md:mt-8 rounded-2xl relative border-1 border-[#D8D8DB] overflow-hidden"
+      className="flex flex-col items-center px-2 lg:px-28 mt-4 md:mt-8 rounded-2xl relative border-1 border-[#D8D8DB] overflow-hidden"
       style={{
         backgroundImage: "url(/hero-bg.png)",
         backgroundSize: "cover",

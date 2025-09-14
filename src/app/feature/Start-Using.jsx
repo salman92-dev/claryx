@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function StartUsing() {
   return (
-    <section className="md:px-36 px-6 py-10 rounded-2xl my-12"
+    <section className="lg:px-36 px-6 py-10 rounded-2xl my-12 md:my-16"
     style={{backgroundImage : 'url(/bg-1.png)', backgroundSize : 'cover', backgroundPosition : 'center'}}
     >
       {/* Heading Section */}
@@ -51,7 +51,7 @@ export default function StartUsing() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="py-2 pb-0 transition"
+            className="py-2 hover:bg-white/10 p-4 rounded-2xl transition"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

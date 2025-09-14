@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Limit() {
   return (
-    <section className="md:px-36 px-4 py-12 max-sm:px-4">
+    <section className="lg:px-36 px-4 max-sm:px-0 my-12 md:my-16">
       {/* Heading Section */}
       <motion.div
         className="text-center flex flex-col items-center mb-4"

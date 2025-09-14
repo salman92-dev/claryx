@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function WhatIsMissing() {
   return (
-    <section className="xl:px-36 px-6 py-10 rounded-2xl my-12"
+    <section className="lg:px-36 px-6 py-10 rounded-2xl my-12 md:my-16"
     style={{backgroundImage : 'url(/bg-1.png)', backgroundSize : 'cover', backgroundPosition : 'center'}}
     >
       {/* Heading Section */}

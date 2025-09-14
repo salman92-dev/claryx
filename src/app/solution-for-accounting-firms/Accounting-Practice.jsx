@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function AccountingPractice() {
   return (
-    <section className="xl:px-36 px-4 py-6 md:py-0 max-sm:px-4">
+    <section className="lg:px-36 px-4 max-sm:px-0 my-12 md:my-16">
       {/* Heading Section */}
       <motion.div
         className="text-center mb-14 flex flex-col items-center"
@@ -13,7 +13,7 @@ export default function AccountingPractice() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20">
+        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-8">
           <Image
             className="w-3"
             src="/favicon.svg"
@@ -40,7 +40,7 @@ export default function AccountingPractice() {
         alt="tag"
         width={586}
         height={586}
-        className="hidden lg:block w-60 absolute left-[38%] top-[36%] z-2"
+        className="hidden lg:block w-60 absolute left-[37%] top-[36%] z-2"
         />
         {[
           {

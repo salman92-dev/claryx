@@ -20,7 +20,7 @@ const item = {
 const FreeTrial = () => {
   return (
     <motion.section
-      className="bg-[#E1F7FF] border border-[#D8D8DB] my-6 rounded-2xl px-4 md:px-20 flex flex-col lg:flex-row items-center justify-between gap-10 max-sm:pt-10"
+      className="bg-[#E1F7FF] border border-[#D8D8DB] my-12 md:my-16 rounded-2xl px-4 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-10 max-sm:pt-10"
       variants={container}
       initial="hidden"
       whileInView="show"

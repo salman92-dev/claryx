@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function FinancialAnalysis() {
   return (
-    <section className="md:px-36 px-4 py-6 md:py-0 max-sm:px-4">
+    <section className="lg:px-36 px-4 py-6 md:py-0 max-sm:px-0">
       {/* Heading Section */}
       <motion.div
         className="text-center mb-14 flex flex-col items-center"
@@ -13,17 +13,7 @@ export default function FinancialAnalysis() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
-        <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2">
+        <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] md:mt-8 mt-4">
           What is AI {" "}
           <span className="text-[#006DD3]"> Financial </span>
           Analysis?
@@ -58,7 +48,7 @@ export default function FinancialAnalysis() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="bg-[#F5F6F9] rounded-2xl px-8 py-12 pb-0 shadow-sm hover:shadow-md transition sticky top-10"
+            className="bg-[#F5F6F9] rounded-2xl px-8 py-12 pb-0  f-after hover:shadow-md transition sticky top-0"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

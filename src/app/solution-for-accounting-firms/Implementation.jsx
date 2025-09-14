@@ -35,7 +35,7 @@ export default function Implementation() {
 
   return (
     <section
-      className="relative py-4 pb-12 md:pb-20 my-8 xl:px-20 rounded-2xl bg-[#F5F8F9]">
+      className="relative py-4 pb-12 md:pb-20 my-12 md:my-16 lg:px-20 rounded-2xl bg-[#F5F8F9]">
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
         {/* Badge */}

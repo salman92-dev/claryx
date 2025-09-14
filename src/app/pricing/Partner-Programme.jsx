@@ -56,7 +56,7 @@ export default function PartnerProgramme() {
 
   return (
     <section
-      className="relative py-4 pb-12 md:pb-40 my-8 xl:px-20 rounded-2xl bg-[#F5F8F9]">
+      className="relative my-12 md:my-16 pb-12 lg:pb-40 my-12 md:my-16 xl:px-20 rounded-2xl bg-[#F5F8F9]">
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
         {/* Badge */}
@@ -66,7 +66,7 @@ export default function PartnerProgramme() {
           whileInView="visible"
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
+          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12"
         >
           <Image
             className="w-3"

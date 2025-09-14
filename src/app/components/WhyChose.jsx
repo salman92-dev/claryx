@@ -11,7 +11,7 @@ export default function WhyChoose() {
 
   return (
     <section
-      className="relative py-4 pb-12 md:pb-20 my-8 md:px-20 rounded-2xl"
+      className="relative py-12 pb-12 lg:pb-20 my-12 md:my-16 md:px-20 rounded-4xl"
       style={{
         backgroundImage: "url(/choose-bg.png)",
         backgroundSize: "cover",
@@ -24,7 +24,7 @@ export default function WhyChoose() {
         whileInView={{ opacity: 1, rotateY: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="hidden md:block absolute bottom-[17rem] left-0 md:left-[26%] w-full md:w-[48%]"
+        className="hidden md:block absolute bottom-[18rem] left-0 md:left-[25%] w-full md:w-[50%]"
       >
         <Image
           src="/laptop-3.png"
@@ -37,24 +37,7 @@ export default function WhyChoose() {
 
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
+   
 
         {/* Heading */}
         <motion.h2
@@ -77,7 +60,7 @@ export default function WhyChoose() {
           whileInView="visible"
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 w-full flex flex-col gap-y-8 md:flex-row justify-between items-end"
+          className="mt-14 w-full flex flex-col gap-y-8 md:flex-row justify-between items-end"
         >
           {/* Left Box */}
           <motion.div
@@ -85,7 +68,7 @@ export default function WhyChoose() {
             className="w-full md:w-[40%] lg:w-[22%] shadow-[0px_16px_69px_0px_#00000040] p-6 rounded-2xl gradient-3 border border-white text-left sticky top-10"
           >
             <Image
-              src="/t-1.svg"
+              src="/choose-1.svg"
               alt="logo"
               width={44}
               height={44}
@@ -105,7 +88,7 @@ export default function WhyChoose() {
             className="w-full md:w-[40%] lg:w-[22%] shadow-[0px_16px_69px_0px_#00000040] p-6 rounded-2xl gradient-3 border border-white text-left sticky top-10"
           >
             <Image
-              src="/t-1.svg"
+              src="/choose-2.svg"
               alt="logo"
               width={44}
               height={44}
@@ -136,7 +119,7 @@ export default function WhyChoose() {
             className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-[0px_16px_69px_0px_#00000040] border border-white text-left sticky top-10"
           >
             <Image
-              src="/t-1.svg"
+              src="/choose-3.svg"
               alt="logo"
               width={44}
               height={44}
@@ -157,7 +140,7 @@ export default function WhyChoose() {
             className="w-full md:w-[40%] lg:w-[46%] p-6  rounded-2xl gradient-3 shadow-[0px_16px_69px_0px_#00000040] border border-white text-left sticky top-12"
           >
             <Image
-              src="/t-1.svg"
+              src="/choose-4.svg"
               alt="logo"
               width={44}
               height={44}
@@ -178,7 +161,7 @@ export default function WhyChoose() {
             className="w-full md:w-[40%] lg:w-[22%] p-6 rounded-2xl gradient-3 shadow-[0px_16px_69px_0px_#00000040] border border-white text-left"
           >
             <Image
-              src="/t-1.svg"
+              src="/choose-5.svg"
               alt="logo"
               width={44}
               height={44}

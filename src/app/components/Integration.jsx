@@ -14,7 +14,7 @@ const fadeUp = {
 const IntegrationsSection = () => {
   return (
     <section
-      className="relative bg-gradient-to-br from-cyan-300 via-blue-400 to-blue-600 text-white rounded-2xl py-10 pl-6 md:pl-20 overflow-hidden"
+      className="relative bg-gradient-to-br from-cyan-300 via-blue-400 to-blue-600 text-white rounded-4xl py-10 pl-6 lg:pl-20 overflow-hidden my-12 md:my-16"
       style={{
         backgroundImage: 'url("/integration-bg.png")',
         backgroundRepeat: 'no-repeat',
@@ -55,11 +55,11 @@ const IntegrationsSection = () => {
             started, stay connected and get more out of your financial data.
           </motion.p>
           <div className="max-md:w-full flex flex-col items-start gap-4 mb-2 mt-4">
-          <div className="flex gap-24">
+          <div className="flex gap-3">
             <motion.img
               src="/quickbooks.svg"
               alt="QuickBooks"
-              className="w-8"
+              className="w-16"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
@@ -68,15 +68,15 @@ const IntegrationsSection = () => {
             <motion.img
               src="/xero.svg"
               alt="Xero"
-              className="w-8"
+              className="w-16"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
               viewport={{ once: true }}
             />
           </div>
-          <span className="gilroy-m text-3xl !leading-[80%] text-white">Online | Xero</span>
-          <span className="gilroy-m text-3xl !leading-[80%] text-white">QuickBooks</span>
+          <span className="gilroy-m text-3xl !leading-[80%] text-white">Xero | QuickBooks</span>
+          {/* <span className="gilroy-m text-3xl !leading-[80%] text-white">QuickBooks</span> */}
         </div>
           <motion.button
             className="bg-white text-black gilroy-m font-semibold px-6 py-3 rounded-full  hover:bg-gray-100 transition mt-8"

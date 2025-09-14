@@ -5,7 +5,7 @@ import { Subtitles } from "lucide-react";
 
 export default function Capabilities() {
   return (
-    <section className="md:px-36 py-6 md:py-0 md:pb-16">
+    <section className="lg:px-36 my-12 md:my-16">
       {/* Heading Section */}
       <motion.div
         className="text-center mb-14 flex flex-col items-center"
@@ -14,7 +14,7 @@ export default function Capabilities() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20">
+        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
           <Image
             className="w-3"
             src="/favicon.svg"

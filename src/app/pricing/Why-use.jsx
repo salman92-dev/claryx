@@ -41,7 +41,7 @@ export default function WhyUse() {
 
   return (
     <section
-      className="relative py-4 pb-12 md:pb-20 my-8 md:px-20 rounded-2xl"
+      className="relative py-4 pb-12 lg:pb-20 md:px-20 rounded-2xl my-12 md:my-16"
       style={{
         backgroundImage: "url(/choose-bg.png)",
         backgroundSize: "cover",
@@ -57,7 +57,7 @@ export default function WhyUse() {
           whileInView="visible"
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
+          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12"
         >
           <Image
             className="w-3"

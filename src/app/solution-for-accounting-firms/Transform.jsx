@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Transform() {
   return (
-    <section className="xl:px-36 px-6 py-10 rounded-2xl my-12"
+    <section className="lg:px-36 px-6 py-10 rounded-2xl my-12 md:my-16"
     style={{backgroundImage : 'url(/bg-1.png)', backgroundSize : 'cover', backgroundPosition : 'center'}}
     >
       {/* Heading Section */}
@@ -54,7 +54,7 @@ export default function Transform() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="py-2 pb-0 transition flex flex-col items-center"
+            className="transition hover:bg-white/10 rounded-2xl p-4 flex flex-col items-center"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
