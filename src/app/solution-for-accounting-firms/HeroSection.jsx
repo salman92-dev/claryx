@@ -87,18 +87,9 @@ const HeroSection = () => {
       whileInView={{opacity:1, filter:'blur(0)', y:0}}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       
-      className="text-[#060B13] gilroy-m text-2xl md:text-4xl lg:px-60 mt-2 text-center"
+      className="text-[#060B13] gilroy-m text-2xl md:text-5xl lg:px-60 mt-2 text-center"
       >
         Transform your practice with AI-powered financial intelli-gence
-      </motion.h3>
-      <motion.h3
-      initial = {{opacity : 0, filter : 'blur(12px)', y : 20}}
-      whileInView={{opacity:1, filter:'blur(0)', y:0}}
-      transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-      
-      className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg md:text-xl lg:px-60 mt-2 text-center"
-      >
-        Manage more clients. Deliver more value. Work less hours.
       </motion.h3>
       {/* Subtext */}
       <motion.p

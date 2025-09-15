@@ -3,13 +3,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function AccountingFirms() {
-
-     const cards = [
+  const cards = [
     {
       icon: "/f-6.svg",
       title: "Portfolio Management",
@@ -49,7 +49,7 @@ export default function AccountingFirms() {
       Transform from bookkeeper to strategic advisor without the extra work.`,
       url: "[Explore advisory tools →]",
     },
-     {
+    {
       icon: "/f-6.svg",
       title: "Portfolio Management",
       subtitle: "See all your clients in one place",
@@ -90,8 +90,6 @@ export default function AccountingFirms() {
     },
   ];
 
-
-
   return (
     <section className="lg:px-36 sm:px-4 my-12 md:my-16">
       {/* Heading Section */}
@@ -102,63 +100,85 @@ export default function AccountingFirms() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
         <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] lg:px-40 tracking-[-1.97px] text-[#060B13] mt-2">
-          How 
+          How
           <span className="text-[#006DD3]"> accounting firms </span>
           use Claryx
         </h2>
       </motion.div>
 
-      {/* Cards Grid */}
+      {/* Cards Slider */}
       <div className="w-full gap-8">
-              <Swiper
-              pagination={{ clickable: true,el: ".my-pagination" }}
-              modules={[Pagination]}
-              spaceBetween={24}
-              loop={true}
-              breakpoints={{
-                320: { slidesPerView: 1 }, // Mobile
-                768: { slidesPerView: 1 }, // Tablet
-                1024: { slidesPerView: 3 }, // Desktop
-              }}
-            >
-              {cards.map((item, i) => (
-                <SwiperSlide key={i}>
-                  <div
-                    custom={i}
-                    className="bg-[#F5F6F9] rounded-2xl p-6 transition min-h-105 shadow-lg shadow-blue-200 flex flex-col justify-between"
-                  >
-                    <div className="w-12 h-12 mb-4 flex items-center justify-center text-blue-600 rounded-lg">
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={48}
-                        height={48}
-                        className="w-10"
-                      />
-                    </div>
-                    <h3 className="gilroy-m text-xl md:text-2xl text-[#1a1a1a] mb-2">
-                      {item.title}
-                    </h3>
-                    <h4 className=" text-[#00234B] gilroy-m text-base md:text-lg mb-4">{item.subtitle}</h4>
-                    <p className="text-[#909090] gilroy-m text-sm mb-4">{item.desc}</p>
-                    <a href="/" className="gradient-1 gilroy-b text-transparent bg-clip-text">{item.url}</a>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <div className="my-pagination flex justify-center !bg-transparent pt-16 gap-2" />
+        <Swiper
+          modules={[Pagination, Navigation]}
+          pagination={{
+            el: ".custom-progress",
+            type: "progressbar",
+          }}
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
+          loop={false}
+          spaceBetween={24}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {cards.map((item, i) => (
+            <SwiperSlide key={i}>
+              <div className="bg-[#F5F6F9] rounded-2xl p-6 transition min-h-105 shadow-lg shadow-blue-200 flex flex-col justify-between">
+                <div className="w-12 h-12 mb-4 flex items-center justify-center text-blue-600 rounded-lg">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={48}
+                    height={48}
+                    className="w-10"
+                  />
+                </div>
+                <h3 className="gilroy-m text-xl md:text-2xl text-[#1a1a1a] mb-2">
+                  {item.title}
+                </h3>
+                <h4 className=" text-[#00234B] gilroy-m text-base md:text-lg mb-4">
+                  {item.subtitle}
+                </h4>
+                <p className="text-[#909090] gilroy-m text-sm mb-4">
+                  {item.desc}
+                </p>
+                <a
+                  href="/"
+                  className="gradient-1 gilroy-b text-transparent bg-clip-text"
+                >
+                  {item.url}
+                </a>
               </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Custom Navigation + Progress */}
+        <div className="flex justify-center">
+          <div className="w-[30%] flex items-center justify-between mt-8 bg-[#F4F4F4] rounded-full h-14">
+          {/* Prev Button */}
+          <button className="custom-prev flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
+            ←
+          </button>
+
+          {/* Progress bar */}
+          <div className="custom-progress relative flex-1 mx-4 h-[4px] rounded-full bg-gray-300 overflow-hidden">
+            <div className="swiper-pagination-progressbar-fill bg-[#006DD3]"></div>
+          </div>
+
+          {/* Next Button */}
+          <button className="custom-next flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
+            →
+          </button>
+        </div>
+        </div>
+      </div>
     </section>
   );
 }

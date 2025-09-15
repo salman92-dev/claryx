@@ -36,10 +36,18 @@ export default function PricingPlan() {
       {/* Cards Grid */}
         <div className="flex flex-wrap gap-4 justify-center mx-auto">
         {[
+           {
+            icon: "/star.svg",
+            title : "Essential",
+            price: `<h5 class="inter-m text-3xl">Free <span class="text-[#909090] text-base inter-r italic"></span></h5>`,
+            tier : "/ month Includes 1 company",
+            duration : `<p class="text-[#909090] text-sm inter-r mb-6"><span class="text-[#000] italic">Billed Annually</span><br/>or $59 monthly</p>`,
+            btn : "Start free trial",
+            },
             {
             icon: "/star.svg",
             title : "Starter",
-            price: `<p class="inter-m text-3xl">$49 <span class="text-[#909090] text-base inter-r italic">USD</span></p>`,
+            price: `<h5 class="inter-m text-3xl">$49 <span class="text-[#909090] text-base inter-r italic">USD</span></h5>`,
             tier : "/ month Includes 1 company",
             duration : `<p class="text-[#909090] text-sm inter-r mb-6"><span class="text-[#000] italic">Billed Annually</span><br/>or $59 monthly</p>`,
             btn : "Start free trial",
@@ -47,7 +55,7 @@ export default function PricingPlan() {
             {
             icon: "/star.svg",
             title: "Growth",
-            price : '<p class="inter-m text-3xl">$149 <span class="text-[#909090] text-base inter-r italic">USD</span></p>',
+            price : '<h5 class="inter-m text-3xl">$149 <span class="text-[#909090] text-base inter-r italic">USD</span></h5>',
             tier : "/ month Includes 5 companies",
             additional : "+$25 per additional",
             duration : `<p class="text-[#909090] text-sm inter-r mb-6"><span class="text-[#000] italic">Billed Annually</span><br/>or $159 monthly</p>`,
@@ -56,7 +64,7 @@ export default function PricingPlan() {
             {
             icon: "/star.svg",
             title: "Scale",
-            price :`<p class="inter-m text-3xl">$299 <span class="text-[#909090] text-base inter-r italic">USD</span></p>`,
+            price :`<h5 class="inter-m text-3xl">$299 <span class="text-[#909090] text-base inter-r italic">USD</span></h5>`,
             tier : "/ month Includes 20 companies",
             additional : "+$20 per additional",
             duration : `<p class="text-[#909090] text-sm inter-r mb-6"><span class="text-[#000] italic">Billed Annually</span><br/>or $359 monthly</p>`,
@@ -65,7 +73,7 @@ export default function PricingPlan() {
             {
             icon: "/star.svg",
             title: "Enterprise",
-            price : `<p class="inter-m text-3xl">$599 <span class="text-[#909090] text-base inter-r italic">USD</span></p>`,
+            price : `<h5 class="inter-m text-3xl">$599 <span class="text-[#909090] text-base inter-r italic">USD</span></h5>`,
             tier : "/ month Includes 50 companies",
             additional : "+$15 per additional",
             duration : `<p class="text-[#909090] text-sm inter-r mb-6"><span class="text-[#000] italic">Billed Annually</span><br/>or $719 monthly</p>`,
@@ -74,7 +82,7 @@ export default function PricingPlan() {
         ].map((card, i) => (
             <motion.div
             key={i}
-            className="rounded-2xl w-full md:w-[48%] lg:w-[23%] border border-[#E0E7F5] shadow-lg transition p-2 bg-[#F4F8FC] w-full shadow-blue-200 h-100"
+            className="rounded-2xl w-full md:w-[48%] lg:w-[18%] border border-[#E0E7F5] shadow-lg transition p-2 bg-[#F4F8FC] w-full shadow-blue-200 h-90"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -99,14 +107,18 @@ export default function PricingPlan() {
                     </div>
                 </div>
                 </div>
-                <div className="text-[#060B13] text-xl tracking-[1.26px] mt-8" dangerouslySetInnerHTML={{__html : card.price}} />
+                <div>
+                  <div className="text-[#060B13] text-xl tracking-[1.26px]" dangerouslySetInnerHTML={{__html : card.price}} />
                 <p className="gilroy-m text-[14px] text-[#909090] mt-2">
                     {card.tier}
                 </p>
-               <p className="gilroy-m text-[14px] text-[#909090] mt-2 mt-8">
+                </div>
+               <div>
+                <p className="gilroy-m text-[14px] text-[#909090] mt-2">
                     {card.additional}
                 </p>
-                <div className="text-[#000] text-sm inter-r mb-6" dangerouslySetInnerHTML={{__html : card.duration}} />{}
+                <div className="text-[#000] text-sm inter-r mb-6" dangerouslySetInnerHTML={{__html : card.duration}} />
+               </div>
                 <button
                 className="gilroy-m border py-3 px-6 rounded-full hover:text-white border-[#004CD3] transition duration-300 bg-transparent hover:bg-[linear-gradient(0deg,#1D4EFF_0%,#24B6FF_100%)] text-[#004CD3]"
                 >

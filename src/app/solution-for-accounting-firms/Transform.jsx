@@ -15,16 +15,6 @@ export default function Transform() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
         <h2 className="gilroy-m text-4xl md:text-[3.3rem] !leading-[130%] tracking-[-1.97px] text-white mt-2">
           Ready to transform your practice?
         </h2>
@@ -67,7 +57,7 @@ export default function Transform() {
             <h3 className="text-[#fff] text-2xl lg:text-3xl gilroy-m font-medium tracking-[0.44px] mb-2">
               {card.title}
             </h3>
-            <p className="!text-[#fff] text-center gilroy-r mb-4 text-sm">
+            <p className="!text-[#fff] text-center gilroy-r mb-4 text-base">
               {card.desc}
             </p>
             <p className="gilroy-m text-sm !text-white mb-2">{card.extra}</p>

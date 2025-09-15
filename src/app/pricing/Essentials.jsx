@@ -14,16 +14,6 @@ export default function Essentials() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
         <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2 md:px-40"> 
             Essential (Free Forever)
         </h2>
@@ -39,13 +29,13 @@ export default function Essentials() {
       </motion.div>
 
       {/* Cards Grid */}
-        <div className="flex flex-wrap gap-4 justify-center mx-auto">
+        <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col gap-4 justify-center w-full md:w-[48%]">
         {[
             {
-            icon: "/correct.svg",
             title: "What’s included",
             desc: `
-            <ul class="list-disc ml-6 space-y-2">
+            <ul class="ml-6 space-y-2 custom-marker">
             <li>1 company connection</li>
             <li>Standard financial statements</li>
             <li>Basic dashboards (P&amp;L, Balance Sheet, Cash Flow)</li>
@@ -59,10 +49,9 @@ export default function Essentials() {
             `,
             },
             {
-            icon: "/wrong.svg",
-            title: "Not included",
+            title: "What's Not included",
             desc: `
-            <ul class="list-disc ml-6 space-y-2">
+            <ul class="ml-6 space-y-2 custom-marker-2">
             <li>AI analysis &amp; insights</li>
             <li>Custom dashboards</li>
             <li>Automated reporting</li>
@@ -76,7 +65,7 @@ export default function Essentials() {
         ].map((card, i) => (
             <motion.div
             key={i}
-            className="rounded-2xl w-full md:w-[48%] border border-[#E0E7F5] hover:shadow-md transition p-2 bg-[#F4F8FC] w-full"
+            className="rounded-2xl transition p-2 w-full sticky top-0 bg-white"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -86,25 +75,23 @@ export default function Essentials() {
             }}
             viewport={{ once: true }}
             >
-            <div className="bg-white rounded-2xl px-8 py-6 border border-[#E0E7F5] h-full">
                 <div className="flex flex-col gap-2 mb-4 md:pr-20">
-                <Image
-                src={card.icon}
-                alt="logo"
-                width={654}
-                height={493}
-                className="w-8 mb-2"
-                />
                 <div>
-                    <h3 className="text-[#060B13] text-xl gilroy-r tracking-[1.26px] font-semibold">
+                    <h3 className="text-[#060B13] text-xl md:text-2xl gilroy-r tracking-[1.26px] font-semibold">
                     {card.title}
                     </h3>
                 </div>
                 </div>
                 <div className="text-[#000] gilroy-r mb-6" dangerouslySetInnerHTML={{__html : card.desc}}/>
-            </div>
+            
             </motion.div>
         ))}
+        </div>
+        <div className="w-full md:w-[48%] relative">
+          <a href="#" className="sticky top-0">
+            < Image src="/get-started.svg" alt="get-started" width={500} height={500}/>
+          </a>
+        </div>
         </div>
 
     </section>

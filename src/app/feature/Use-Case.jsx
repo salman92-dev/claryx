@@ -14,36 +14,32 @@ export default function Usecase() {
     {
       id: 1,
       title: "For CEOs & Owners",
-      subtitle : "Make confident decisions without a finance degree",
       description: "Not just charts and graphs – real analysis that explains what’s happening and why",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-19.svg",
     },
     {
       id: 2,
       title: "For CFOs & Controllers",
-      subtitle : "Focus on strategy, not spreadsheets",
       description: "Automate variance analysis - Get instant answers for the board - Identify optimization opportunities - Generate narratives automatically",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-21.svg",
     },
     {
       id: 3,
       title: "For Accounting Firms",
-      subtitle :"Deliver insights, not just numbers",
       description: "Provide instant client answers - Gen- erate professional narratives - Catch issues across all clients - Scale advisory services",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-20.svg",
     },
     {
       id: 4,
       title: "For Operations Teams",
-      subtitle : "Connect activities to financial outcomes",
       description: "Understand cost drivers - Track departmental performance - Monitor budget adherence - Identify ineﬀiciencies",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-22.svg",
     },
   ];
 
   return (
     <section
-      className="relative py-8 md:py-16 my-12 md:my-16 md:px-20 rounded-2xl"
+      className="relative py-8 md:py-16 my-12 md:my-16 md:px-20 rounded-4xl"
       style={{
         backgroundImage: "url(/choose-bg.png)",
         backgroundSize: "cover",
@@ -52,25 +48,6 @@ export default function Usecase() {
     >
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow"
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
-
         {/* Heading */}
         <motion.h2
           variants={fadeUp}
@@ -107,7 +84,7 @@ export default function Usecase() {
                   height={44}
                   className="w-10 mb-4"
                 />
-                <h3 className="gilroy-m text-lg text-[#00234B] pr-10">
+                <h3 className="gilroy-m font-bold text-xl md:text-2xl text-[#00234B] pr-10">
                   {item.title}
                 </h3>
                 <h4 className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg">
@@ -145,7 +122,7 @@ export default function Usecase() {
                   height={44}
                   className="w-10 mb-4"
                 />
-                <h3 className="gilroy-m text-lg text-[#00234B] pr-10">
+                <h3 className="gilroy-m text-lg text-[#00234B] text-xl md:text-2xl font-bold pr-10">
                   {item.title}
                 </h3>
                 <h4 className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg">

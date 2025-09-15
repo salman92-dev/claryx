@@ -14,48 +14,30 @@ export default function Implementation() {
     {
       id: 1,
       title: "Priority chat support",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-27.svg",
     },
     {
       id: 2,
       title: "Assigned success manager",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-28.svg",
     },
     {
       id: 3,
       title: "Best practices guidance",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-29.svg",
     },
     {
       id: 4,
       title: "Implementation assistance ",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-30.svg",
     },
   ];
 
   return (
     <section
-      className="relative py-4 pb-12 md:pb-20 my-12 md:my-16 lg:px-20 rounded-2xl bg-[#F5F8F9]">
+      className="relative py-4 pb-12 md:pb-20 my-12 md:my-16 lg:px-20 rounded-4xl bg-[#F5F8F9]">
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
 
         {/* Heading */}
         <motion.h2
@@ -81,24 +63,6 @@ export default function Implementation() {
         <p className="text-[#454140] gilroy-r text-lg mt-4">
             Simple onboarding - Connect client accounts in minutes - Templates to get started quickly - No IT required
         </p>
-                {/* Badge */}
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12 md:mt-20"
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
 
         {/* Heading */}
         <motion.h2
@@ -112,9 +76,9 @@ export default function Implementation() {
           <span className="text-[#006DD3]">Dedicated</span> support
         </motion.h2>
 
-          <div className="mt-4 md:mt-20 w-full flex flex-col md:flex-row justify-center items-center gap-0 md:gap-8 relative">
+          <div className="md:py-36 max-sm:pt-8 w-full grid grid-cols-1 md:grid-cols-2 md:gap-x-[30%] relative">
           {/* Central Claryx Icon */}
-          <div className="w-[50%] mx-auto items-center text-white">
+          <div className="absolute w-[50%] left-[25%] top-10 mx-auto items-center text-white">
             <Image
               src="/difference-img.png" // Replace with Claryx icon if different
               alt="Claryx logo"
@@ -129,15 +93,7 @@ export default function Implementation() {
             <motion.div
               key={item.id}
               whileHover={{ scale: 1.05 }}
-               className={`relative w-full md:w-[25%] p-6 my-4 rounded-2xl bg-white shadow-md text-left ${
-                index === 0
-                ? "md:absolute md:top-[-0rem] md:left-[11%]"
-                : index === 1
-                ? "md:absolute md:top-[-4rem] md:right-[7%]"
-                : index === 2
-                ? "md:absolute md:bottom-[-4%] md:left-[12%]"
-                : "md:absolute md:bottom-[0%] md:right-[5%]"
-            }`}
+               className={`relative p-6 my-4 rounded-2xl bg-white shadow-lg text-left`}
             >
               <Image
                 src={item.imageSrc}

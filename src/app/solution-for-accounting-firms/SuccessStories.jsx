@@ -52,7 +52,7 @@ const SuccessStories = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="py-16 lg:py-24 pb-4 lg:pb-4 px-4 lg:px-22 rounded-3xl my-12 md:my-16"
+      className="py-16 lg:py-24 pb-4 lg:pb-4 px-4 lg:px-22 rounded-4xl my-12 md:my-16"
       style={{
         backgroundImage: 'url("/business-bg.png")',
         backgroundRepeat: "no-repeat",
@@ -75,14 +75,17 @@ const SuccessStories = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <p className="flex items-center max-md:mx-auto w-fit gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-              <Image className="w-3" src="/favicon.svg" alt="favicon" width={24} height={24} />
-              Ai Financial Analysis
-            </p>
-            <h2 className="gilroy-m text-4xl md:text-6xl !leading-[110%] tracking-[-1.97px] text-[#060B13] mt-2">
+              <h2 className="gilroy-m text-4xl md:text-6xl !leading-[110%] tracking-[-1.97px] text-[#060B13] -mt-2">
              Success stories
             </h2>
+            <button className="bg-blue-600 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition mt-2">
+              Join the Early adaptors
+            </button>
           </motion.div>
+          <p className="max-w-xl">
+            Dive into Practical case studies that shows what worked, what didn't, and the lesson that can
+            inspire your next big moves.
+          </p>
         </motion.div>
 
         {/* Cards Section */}
@@ -94,8 +97,8 @@ const SuccessStories = () => {
         loop={true}
         breakpoints={{
           320: { slidesPerView: 1 }, // Mobile
-          768: { slidesPerView: 1 }, // Tablet
-          1024: { slidesPerView: 1 }, // Desktop
+          768: { slidesPerView: 2 }, // Tablet
+          1024: { slidesPerView: 3 }, // Desktop
         }}
       >
         {slides.map((item, i) => (

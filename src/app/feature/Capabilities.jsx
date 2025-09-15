@@ -14,16 +14,6 @@ export default function Capabilities() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
         <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2 md:px-50">
           Key AI 
           <span className="text-[#006DD3]"> capabilities </span>
@@ -36,21 +26,18 @@ export default function Capabilities() {
           {
             icon: "/k-1.png",
             title: "Ask Questions, Get Answers",
-            subtitle : "Query your data conversationally",
             desc: `Stop translating your thoughts into reports and formulas. Just ask: - “Why did our margins drop last quarter?” - “What’s driving the increase in operating expenses?” - “Which customers are most profitable?” - “Where are we losing money?” The AI CFO understands your intent and searches across all your data to find answers.`,
             url : "[Try sample questions →]"
           },
           {
             icon: "/k-2.png",
             title: "Anomaly Detection & Alerts",
-            subtitle : "Catch issues before they become problems",
             desc: `Our AI CFO continuously monitors your financials and alerts you to: - Unusual expense patterns - Revenue irregularities - Cash flow concerns - Budget variances - Suspicious transactions Every alert includes: - What happened - The specific issue identified - Why it matters - Business impact explained - What to do - Recommended next steps`,
             url: "[Learn more about alerts →]",
           },
           {
             icon: "/k-3.png",
             title: "Root Cause Analysis",
-            subtitle : "Drill from symptom to source in seconds",
             desc: `See a problem in your dashboard? Our AI CFO traces it back to the source: - Start with high-level metrics - Drill into account-level details - Identify specific transactions - Understand the complete story. No more hours of spreadsheet detective work. Get answers instantly.`,
             url: "[Try sample questions →]",
           },
@@ -67,7 +54,7 @@ export default function Capabilities() {
             }}
             viewport={{ once: true }}
           >
-           <div className="bg-[#fff] rounded-2xl px-4 py-4 border-1 border-[#E0E7F5] h-full">
+           <div className="bg-[#fff] rounded-2xl px-4 py-4 border-1 border-[#E0E7F5] h-full flex flex-col justify-between">
              <Image
               src={card.icon}
               alt="logo"

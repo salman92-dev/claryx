@@ -61,6 +61,17 @@ export default function FAQSection() {
             For any unanswered questions, reach out to our support team via email.
             We’ll respond as soon as possible to assist you.
           </p>
+          <div className="mt-12">
+            <p className="text-[#454140] gilroy-r text-lg md:text-lg">
+            Can't find what you are looking for?
+            </p>
+            <h3 className="text-2xl md:text-3xl gilroy-m leading-tight text-black mb-4">
+              we would like to chat with you.
+            </h3>
+            <button className="bg-blue-600 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition">
+              Chat With Us
+            </button>
+           </div>
         </div>
 
         {/* Right: FAQ List */}

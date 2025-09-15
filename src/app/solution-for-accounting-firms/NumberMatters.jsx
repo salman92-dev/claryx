@@ -14,16 +14,6 @@ export default function NumberMatters() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
         <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2 md:px-40"> 
             The
           <span className="text-[#006DD3]"> numbers </span>
@@ -61,7 +51,7 @@ export default function NumberMatters() {
         ].map((card, i) => (
             <motion.div
             key={i}
-            className="rounded-2xl w-full md:w-[48%] border border-[#E0E7F5] hover:shadow-md transition p-2 bg-[#F4F8FC] w-full"
+            className="rounded-2xl w-full md:w-[48%] border border-[#E0E7F5] shadow-lg hover:shadow-md transition p-2 bg-[#F4F8FC] w-full"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

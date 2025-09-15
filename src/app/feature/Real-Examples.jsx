@@ -52,7 +52,7 @@ const RealExample = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="py-16 lg:py-24 my-12 md:my-16 pb-4 lg:pb-4 px-6 lg:px-22 rounded-3xl"
+      className="py-16 lg:py-24 my-12 md:my-16 pb-4 lg:pb-4 px-6 lg:px-22 rounded-4xl"
       style={{
         backgroundImage: 'url("/business-bg.png")',
         backgroundRepeat: "no-repeat",
@@ -75,11 +75,7 @@ const RealExample = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <p className="flex items-center max-md:mx-auto w-fit gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-              <Image className="w-3" src="/favicon.svg" alt="favicon" width={24} height={24} />
-              Ai Financial Analysis
-            </p>
-            <h2 className="gilroy-m text-4xl md:text-6xl !leading-[110%] tracking-[-1.97px] text-[#060B13] mt-2">
+            <h2 className="gilroy-m text-4xl md:text-6xl !leading-[110%] tracking-[-1.97px] text-[#060B13]">
               Real examples from real businesses
             </h2>
           </motion.div>

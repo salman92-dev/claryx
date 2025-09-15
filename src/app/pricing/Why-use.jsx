@@ -14,34 +14,32 @@ export default function WhyUse() {
     {
       id: 1,
       title: "Small Businesses",
-      subtitle : "Single company?",
       description: "Single company? The Starter plan gives you enterprise-grade financial intelli- gence at a fraction of the cost of a CFO.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-19.svg",
     },
     {
       id: 2,
       title: "Growing Companies",
-      subtitle :"Multiple entities?",
       description: "Add only what you need. Pay for 7 companies, not a 10- company package you don’t fully use",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-20.svg",
     },
     {
       id: 3,
       title: "Accounting Firms",
       description: "Whether you have 15 clients or 150, our flexible pricing means you only pay for what you use. White-label everything as your own service.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-21.svg",
     },
     {
       id: 4,
       title: "Franchises & Multi-location Businesses",
       description: "Compare locations, consolidate results, and identify your best and worst per- formers with AI-powered insights.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-22.svg",
     },
   ];
 
   return (
     <section
-      className="relative py-4 pb-12 lg:pb-20 md:px-20 rounded-2xl my-12 md:my-16"
+      className="relative py-4 pb-12 lg:pb-20 md:px-20 rounded-4xl my-12 md:my-16"
       style={{
         backgroundImage: "url(/choose-bg.png)",
         backgroundSize: "cover",
@@ -50,25 +48,6 @@ export default function WhyUse() {
     >
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow mt-12"
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
-
         {/* Heading */}
         <motion.h2
           variants={fadeUp}

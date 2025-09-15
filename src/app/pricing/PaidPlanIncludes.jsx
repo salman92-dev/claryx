@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination,Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -100,17 +100,7 @@ export default function PaidPlanIncludes() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
-        <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] lg:px-40 tracking-[-1.97px] text-[#060B13] mt-2">
+        <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] lg:px-40 tracking-[-1.97px] text-[#060B13]">
           All Paid Plans Include Everything in Essential, plus:
         </h2>
       </motion.div>
@@ -118,16 +108,23 @@ export default function PaidPlanIncludes() {
       {/* Cards Grid */}
       <div className="w-full gap-8">
               <Swiper
-              pagination={{ clickable: true,el: ".my-pagination" }}
-              modules={[Pagination]}
-              spaceBetween={24}
-              loop={true}
-              breakpoints={{
-                320: { slidesPerView: 1 }, // Mobile
-                768: { slidesPerView: 1 }, // Tablet
-                1024: { slidesPerView: 3 }, // Desktop
-              }}
-            >
+               modules={[Pagination, Navigation]}
+          pagination={{
+            el: ".custom-progress",
+            type: "progressbar",
+          }}
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
+          loop={false}
+          spaceBetween={24}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 3 },
+          }}
+             >
               {cards.map((item, i) => (
                 <SwiperSlide key={i}>
                   <div
@@ -146,12 +143,30 @@ export default function PaidPlanIncludes() {
                     <h3 className="gilroy-m text-2xl md:text-4xl text-[#1a1a1a] mb-8">
                       {item.title}
                     </h3>
-                    <div className="text-[#000] gilroy-b font-bold text-lg md:text-xl mb-4" dangerouslySetInnerHTML={{__html : item.desc}}/>
+                    <div className="text-[#000] inter-r text-lg md:text-xl mb-4" dangerouslySetInnerHTML={{__html : item.desc}}/>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="my-pagination flex justify-center !bg-transparent pt-16 gap-2" />
+            {/* Custom Navigation + Progress */}
+        <div className="flex justify-center">
+          <div className="w-[30%] flex items-center justify-between mt-8 bg-[#F8FBFF] rounded-full h-14">
+          {/* Prev Button */}
+          <button className="custom-prev flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
+            ←
+          </button>
+
+          {/* Progress bar */}
+          <div className="custom-progress relative flex-1 mx-4 h-[4px] rounded-full bg-gray-300 overflow-hidden">
+            <div className="swiper-pagination-progressbar-fill bg-[#006DD3]"></div>
+          </div>
+
+          {/* Next Button */}
+          <button className="custom-next flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
+            →
+          </button>
+        </div>
+        </div>
               </div>
     </section>
   );

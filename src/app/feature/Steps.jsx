@@ -13,17 +13,7 @@ export default function Steps() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
-        <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] mt-2 md:px-50">
+        <h2 className="gilroy-m text-center text-4xl md:text-6xl !leading-[130%] tracking-[-1.97px] text-[#060B13] md:px-50">
           The 
           <span className="text-[#006DD3]"> Steps </span>
           We Take to Get You There
@@ -34,25 +24,25 @@ export default function Steps() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {[
           {
-            icon: "/f-6.svg",
+            icon: "/logo-15.svg",
             title: "Connect your data",
             desc: `Link your Xero or QuickBooks account in under 5 minutes`,
             w: "70%",
           },
           {
-            icon: "/f-5.svg",
+            icon: "/logo-16.svg",
             title: "Ask anything",
             desc: `Use natural language to query your financials`,
             w: "90%",
           },
           {
-            icon: "/f-7.svg",
+            icon: "/logo-17.svg",
             title: "Get instant insights",
             desc: `AI analyzes your entire financial history and delivers answers immediately`,
             w: "100%",
           },
           {
-            icon: "/f-7.svg",
+            icon: "/logo-18.svg",
             title: "Take action",
             desc: `Follow AI-generated recommendations specific to your situation`,
             w: "100%",

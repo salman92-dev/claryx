@@ -15,52 +15,33 @@ export default function Difference() {
       id: 1,
       title: "Industry-specific intelligence",
       description: "Understands your sector’s unique metrics, seasonality, and benchmarks.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-23.svg",
     },
     {
       id: 2,
       title: "Transparent insights",
       description: "Every recommendation includes confidence scoring and clear, jargon-free explanations.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-24.svg",
     },
     {
       id: 3,
       title: "Adaptive learning",
       description: "Continuously improves by learning your business patterns and preferences.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-25.svg",
     },
     {
       id: 4,
       title: "Multi-layer analysis",
       description: "From a 30,000-foot executive view to transaction-level detail.",
-      imageSrc: "/t-1.svg",
+      imageSrc: "/logo-26.svg",
     },
   ];
 
   return (
     <section
-      className="relative py-8 md:py-16 pb-12 lg:pb-20 my-12 md:my-16 md:px-20 rounded-2xl bg-[#F5F8F9]">
+      className="relative py-8 md:py-16 pb-12 lg:pb-20 my-12 md:my-16 md:px-20 rounded-4xl bg-[#F5F8F9]">
       {/* Content */}
       <div className="flex flex-col items-center mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow"
-        >
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </motion.p>
-
         {/* Heading */}
         <motion.h2
           variants={fadeUp}

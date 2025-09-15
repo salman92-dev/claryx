@@ -38,20 +38,29 @@ export default function Limit() {
         {[
           {
             title: "3 companies?",
-            desc: `Choose Starter + 2 additional = $99/month`,
+            choose: `Choose Starter`,
+            sign : "+",
+            additional : "2 additional",
+            price : "$99/month"
           },
           {
             title: "8 companies?",
-            desc: `Choose Growth + 3 additional = $224/month`,
+            choose: `Choose Starter`,
+            sign : "+",
+            additional : "2 additional",
+            price : "$224/month"
           },
           {
             title: "30 companies?",
-            desc: `Choose Scale + 10 additional = $499/month`,
+            choose: `Choose Starter`,
+            sign : "+",
+            additional : "2 additional",
+            price : "$499/month"
           },
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="bg-[#F5F6F9] rounded-2xl px-8 py-12 pb-0 shadow-sm hover:shadow-md transition sticky top-10"
+            className="bg-[linear-gradient(0deg,rgba(29,78,255,0.2)_0%,rgba(36,182,255,0.2)_100%)] rounded-2xl py-6 pb-0 shadow-sm hover:shadow-md transition sticky top-10"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -61,12 +70,23 @@ export default function Limit() {
             }}
             viewport={{ once: true }}
           >
-            <h3 className="text-[#060B13] text-xl gilroy-r tracking-[1.26px] font-semibold mb-2">
+            <div className="bg-[linear-gradient(0deg,#1D4EFF_0%,#24B6FF_100%)] p-2 rounded-3xl shadow-[-2px_12px_36px_0px_#004CD375] w-[85%] mx-auto">
+              <h3 className="text-[#060B13] text-center py-3 rounded-2xl text-xl md:text-2xl gilroy-r tracking-[1.26px] font-semibold bg-white">
               {card.title}
             </h3>
-            <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-sm mb-6">
-              {card.desc}
-            </p>
+            </div>
+            <div className="py-6 border-b-2 border-white">
+              <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-sm text-center">
+              {card.choose}
+              </p>
+              <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-sm text-center">
+                {card.sign}
+              </p>
+              <p className="text-[#909090] gilroy-m tracking-[-0.07px] text-sm text-center">
+                {card.additional}
+              </p>
+            </div>
+            <h4 className="text-black text-center py-4 text-2xl">{card.price}</h4>
           </motion.div>
         ))}
       </div>
