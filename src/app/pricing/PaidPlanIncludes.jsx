@@ -150,7 +150,7 @@ export default function PaidPlanIncludes() {
             </Swiper>
             {/* Custom Navigation + Progress */}
         <div className="flex justify-center">
-          <div className="w-[30%] flex items-center justify-between mt-8 bg-[#F8FBFF] rounded-full h-14">
+          <div className="w-full md:w-[30%] flex items-center justify-between mt-8 bg-[#F8FBFF] rounded-full h-14">
           {/* Prev Button */}
           <button className="custom-prev flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
             ←
