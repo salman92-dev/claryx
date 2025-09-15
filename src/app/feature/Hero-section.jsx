@@ -71,11 +71,11 @@ const HeroSection = () => {
         variants={textContainer}
         initial="hidden"
         animate="show"
-        className="gilroy-m text-[#060B13] text-3xl md:text-6xl mt-2 text-center !leading-[150%] px-40 mt-12 md:mt-20"
+        className="gilroy-m text-white text-3xl md:text-6xl mt-2 text-center !leading-[150%] px-40 mt-12 md:mt-20"
       >
         <motion.h1 variants={textItem}>
           AI
-          <span className="gradient-1 rounded-2xl text-[#fff] py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
+          <span className="gradient-1 rounded-2xl text-white py-2 px-4 ml-2 border-1 border-[#573DC1] mr-3">
             Financial
           </span>
           Analysis
@@ -88,7 +88,7 @@ const HeroSection = () => {
       whileInView={{opacity:1, filter:'blur(0)', y:0}}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       
-      className="text-[#060B13] gilroy-m text-2xl md:text-4xl mt-2 text-center"
+      className="text-white gilroy-m text-2xl md:text-4xl mt-2 text-center"
       >
         Finally, financial analysis that explains itself
       </motion.h3>
@@ -97,13 +97,13 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 1 }}
-        className="text-center text-[#909090] gilroy-r text-base mt-6 max-w-2xl"
+        className="text-center !text-white gilroy-r text-base mt-6 max-w-2xl"
       >
         Get instant answers to your financial questions. Our AI CFO analyzes your data, identifies issues,
          explains what’s happening, and tells you what to do next - all in plain English.
       </motion.p>
       <div className="flex items-center gap-2 mt-6">
-        <button className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition">
+        <button className="bg-gradient-to-r border-2 border-white from-blue-600 to-blue-400 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition">
                Start Free Trial
         </button>
          <button className="bg-white text-black py-2.5 px-6 rounded-full hover:opacity-90 transition">

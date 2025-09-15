@@ -9,6 +9,7 @@ import PartnerProgramme from "./Partner-Programme";
 import FAQSection from "./FAQ";
 import WhatIsMissing from "./WhtsIsMissing";
 import Footer from "../components/layout/Footer";
+import ComparePlans from "./Compare-plans";
 const Pricing = () => {
     return (
         <div className="2xl:container mx-auto px-4 md:px-8">
@@ -18,6 +19,7 @@ const Pricing = () => {
             <Limit />
             <Essentials />
             <PaidPlanIncludes />
+            <ComparePlans />
             <WhyUse />
             <PartnerProgramme />
             <FAQSection />

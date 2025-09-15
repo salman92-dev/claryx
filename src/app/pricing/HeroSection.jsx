@@ -41,7 +41,7 @@ const HeroSection = () => {
         variants={textContainer}
         initial="hidden"
         animate="show"
-        className="gilroy-m text-[#060B13] text-3xl md:text-6xl mt-2 text-center !leading-[150%] mt-12 md:mt-20"
+        className="gilroy-m text-white text-3xl md:text-6xl mt-2 text-center !leading-[150%] mt-12 md:mt-20"
       >
         <motion.h1 variants={textItem}>
           Claryx Pricing Page
@@ -54,7 +54,7 @@ const HeroSection = () => {
       whileInView={{opacity:1, filter:'blur(0)', y:0}}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       
-      className="text-[#060B13] gilroy-m text-2xl md:text-4xl lg:px-80 mt-2 text-center"
+      className="text-white gilroy-m text-2xl md:text-4xl lg:px-80 mt-2 text-center"
       >
         Simple, transparent pricing that grows with you
       </motion.h3>
@@ -63,13 +63,13 @@ const HeroSection = () => {
       whileInView={{opacity:1, filter:'blur(0)', y:0}}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       
-      className="gradient-1 text-transparent bg-clip-text gilroy-m text-lg md:text-xl lg:px-60 mt-4 text-center"
+      className="text-white gilroy-m text-lg md:text-xl lg:px-60 mt-4 text-center"
       >
         Start with a 14-day free trial. No credit card required.
       </motion.h3>
       {/* Subtext */}
       <div className="flex items-center gap-2 mt-12">
-        <button className="gradient-1 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition">
+        <button className="gradient-1 text-white py-2.5 px-6 rounded-full hover:opacity-90 transition border-2 border-white">
                Start Free Trial
         </button>
       </div>

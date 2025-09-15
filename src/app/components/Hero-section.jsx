@@ -82,7 +82,7 @@ const HeroSection = () => {
         variants={textContainer}
         initial="hidden"
         animate="show"
-        className="gilroy-m text-[#060B13] text-4xl md:text-6xl mt-2 text-center !leading-[150%]"
+        className="gilroy-m text-white text-4xl md:text-6xl mt-2 text-center !leading-[150%]"
       >
         <motion.h1 variants={textItem}>
           All-in-one reporting, dashboards
@@ -100,7 +100,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 1 }}
-        className="text-center text-[#909090] gilroy-r text-base mt-6 max-w-2xl"
+        className="text-center !text-white gilroy-r text-base mt-6 max-w-2xl"
       >
         Streamline your business's financial management with our intuitive,
         scalable SaaS platform. Designed for U.S. enterprises, our solutions

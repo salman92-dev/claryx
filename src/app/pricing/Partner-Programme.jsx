@@ -13,44 +13,44 @@ export default function PartnerProgramme() {
   const data = [
     {
       id: 1,
-      title: "Free internal use license",
-      subtitle : "Free internal use license with 10+ paid clients",
-      imageSrc: "/t-1.svg",
+      title: "20% lifetime commission",
+      subtitle : "on every client you refer",
+      imageSrc: "/logo-31.svg",
     },
     {
       id: 2,
-      title: "20% lifetime commission",
-      subtitle : "on every client you refer",
-      imageSrc: "/t-1.svg",
+      title: "Free internal use license",
+      subtitle : "Free internal use license with 10+ paid clients",
+      imageSrc: "/logo-32.svg",
     },
     {
-      id: 3,
-      title: "Early access",
-      subtitle :"to new features",
-      imageSrc: "/t-1.svg",
+        id : 3,
+        title : "White-label capabilities",
+        subtitle : "included on all plans",
+        imageSrc : "/logo-33.svg"
     },
     {
       id: 4,
-      title: "Quarterly business",
-      subtitle : "reviews with success team",
-      imageSrc: "/t-1.svg",
+      title: "Early access",
+      subtitle :"to new features",
+      imageSrc: "/logo-33.svg",
     },
     {
-        id : 5,
-        title : "Co-branded marketing materials",
-        imageSrc : "/t-1.svg"
+      id: 5,
+      title: "Quarterly business",
+      subtitle : "reviews with success team",
+      imageSrc: "/logo-34.svg",
     },
     {
         id : 6,
-        title : "Bulk client onboarding ",
-        subtitle : "and migration support",
-        imageSrc : "/t-1.svg"
+        title : "Co-branded marketing materials",
+        imageSrc : "/logo-35.svg"
     },
     {
         id : 7,
-        title : "White-label capabilities",
-        subtitle : "included on all plans",
-        imageSrc : "/t-1.svg"
+        title : "Bulk client onboarding ",
+        subtitle : "and migration support",
+        imageSrc : "/logo-36.svg"
     }
   ];
 
@@ -90,38 +90,15 @@ export default function PartnerProgramme() {
           Partner Program for <span className="text-[#006DD3]">Accounting</span> Professionals
         </motion.h2>
 
-          <div className="mt-4 md:mt-40 w-full flex flex-col md:flex-row justify-center items-center gap-0 md:gap-8 relative">
-          {/* Central Claryx Icon */}
-          <div className="w-[50%] mx-auto items-center text-white">
-            <Image
-              src="/difference-img.png" // Replace with Claryx icon if different
-              alt="Claryx logo"
-              width={1388}
-              height={1266}
-              className="hidden md:block w-full"
-            />
-          </div>
+          <div className="mt-4 md:mt-20 w-full flex flex-wrap !justify-center gap-3 relative">
+
 
           {/* Surrounding Boxes */}
           {data.map((item, index) => (
             <motion.div
               key={item.id}
               whileHover={{ scale: 1.05 }}
-               className={`relative w-full md:w-[25%] p-6 my-4 rounded-2xl bg-white shadow-md text-left ${
-                index === 0
-                ? "md:absolute md:top-[4rem] md:left-[1%]"
-                : index === 1
-                ? "md:absolute md:top-[-7rem] md:left-[25%]"
-                : index === 2
-                ? "md:absolute md:top-[-4%] md:right-[14%]"
-                : index === 3
-                ? "md:absolute md:top-[37%] md:right-[0%]" 
-                : index === 4
-                ? "md:absolute md:bottom-[-9%] md:right-[12%]"
-                : index ===5 
-                ? "md:absolute md:bottom-[-24%] md:left-[28%]"
-                : "md:absolute md:bottom-[12%] md:left-[10%]" 
-            }`}
+               className={`relative w-full md:w-[48%] lg:w-[32%] p-6 rounded-2xl bg-white shadow-md text-left`}
             >
               <Image
                 src={item.imageSrc}
