@@ -13,16 +13,6 @@ export default function Limit() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="flex items-center gap-2 text-[#6786EC] gilroy-m text-sm bg-[#F5F6F9] rounded-full px-6 py-2 shadow">
-          <Image
-            className="w-3"
-            src="/favicon.svg"
-            alt="favicon"
-            width={24}
-            height={24}
-          />
-          Ai Financial Analysis
-        </p>
         <h2 className="gilroy-m text-center text-2xl md:text-3xl !leading-[130%] text-[#060B13] mt-2">
           Need more than 50 companies?
         </h2>
@@ -60,7 +50,7 @@ export default function Limit() {
         ].map((card, i) => (
           <motion.div
             key={i}
-            className="bg-[linear-gradient(0deg,rgba(29,78,255,0.2)_0%,rgba(36,182,255,0.2)_100%)] rounded-2xl py-6 pb-0 shadow-sm hover:shadow-md transition sticky top-10"
+            className="bg-[linear-gradient(0deg,rgba(29,78,255,0.2)_0%,rgba(36,182,255,0.2)_100%)] rounded-2xl py-6 pb-0 shadow-sm hover:shadow-md transition"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
