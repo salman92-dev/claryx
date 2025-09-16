@@ -12,41 +12,45 @@ export default function MegaMenuNavbar() {
   const mobileMenuRef = useRef(null); // For focus trapping
   const hoverTimeoutRef = useRef(null); // For managing hover timeouts
 
+  // ✅ JSON with URLs
   const menuItems = [
     {
       label: "Products",
+      href: "/products",
       mega: [
         {
-          title: "Features ",
-          links: ["AI Financial Analysis"],
+          title: "Features",
+          links: [
+            { label: "AI Financial Analysis", href: "/feature" },
+          ],
         },
         {
-          title: "Features ",
-          links: ["Management Reporting"],
-        }
+          title: "Features",
+          links: [
+            { label: "Management Reporting", href: "/management-reporting" },
+          ],
+        },
       ],
     },
     {
       label: "Customer",
+      href: "/customer",
       mega: [
         {
-          links: ["Solutions ", "Accountants "],
-        }
+          links: [
+            { label: "Solutions", href: "/solution-for-accounting-firms" },
+            { label: "Accountants", href: "/accountants" },
+          ],
+        },
       ],
     },
-    { label: "Pricing" },
+    { label: "Pricing", href: "/pricing" },
   ];
 
   // Toggle mobile menu and reset submenu state
   const toggleMobileMenu = () => {
     setMobileOpen((prev) => !prev);
     setActiveMobileMenu(null);
-  };
-
-  // Generate href from link text
-  const linkHref = (text) => {
-    if (!text) return "/";
-    return "/" + text.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
   };
 
   // Handle mouse enter for desktop mega menu
@@ -143,16 +147,18 @@ export default function MegaMenuNavbar() {
                 onMouseEnter={() => handleMouseEnter(item.label)}
                 onMouseLeave={handleMouseLeave}
               >
-                <button
+                <Link
+                  href={item.href || "/"}
                   className="flex items-center gap-1 gilroy-m text-[#909090] text-xl hover:text-black transition"
                   aria-haspopup={!!item.mega}
                   aria-expanded={hoveredMenu === item.label}
                   onKeyDown={(e) => handleKeyDown(e, item.label, !!item.mega)}
                   tabIndex={0}
+                  onClick={() => setHoveredMenu(null)}
                 >
                   {item.label}
                   {item.mega && <ChevronDown size={16} />}
-                </button>
+                </Link>
 
                 {/* Mega Menu (Desktop) */}
                 <AnimatePresence>
@@ -166,19 +172,21 @@ export default function MegaMenuNavbar() {
                       className="absolute top-full left-0 mt-4 bg-white shadow-xl rounded-xl p-6 grid grid-cols-3 gap-6 w-[min(400px,50vw)] z-50"
                     >
                       {item.mega.map((col) => (
-                        <div key={col.title}>
-                          <h4 className="font-semibold text-sm text-gray-900 mb-2">
-                            {col.title}
-                          </h4>
+                        <div key={col.title || item.label}>
+                          {col.title && (
+                            <h4 className="font-semibold text-sm text-gray-900 mb-2">
+                              {col.title}
+                            </h4>
+                          )}
                           <ul className="space-y-1">
                             {col.links.map((link) => (
-                              <li key={link}>
+                              <li key={link.label}>
                                 <Link
-                                  href={linkHref(link)}
+                                  href={link.href}
                                   className="text-sm text-gray-600 hover:text-blue-600 transition"
                                   onClick={() => setHoveredMenu(null)}
                                 >
-                                  {link}
+                                  {link.label}
                                 </Link>
                               </li>
                             ))}
@@ -257,20 +265,22 @@ export default function MegaMenuNavbar() {
                       className="overflow-hidden px-6 pb-4"
                     >
                       {item.mega.map((col) => (
-                        <div key={col.title} className="mt-3">
-                          <h4 className="font-semibold">{col.title}</h4>
+                        <div key={col.title || item.label} className="mt-3">
+                          {col.title && (
+                            <h4 className="font-semibold">{col.title}</h4>
+                          )}
                           <ul className="space-y-1 text-sm mt-1">
                             {col.links.map((link) => (
-                              <li key={link}>
+                              <li key={link.label}>
                                 <Link
-                                  href={linkHref(link)}
+                                  href={link.href}
                                   className="hover:text-blue-600 transition"
                                   onClick={() => {
                                     setMobileOpen(false);
                                     setActiveMobileMenu(null);
                                   }}
                                 >
-                                  {link}
+                                  {link.label}
                                 </Link>
                               </li>
                             ))}
