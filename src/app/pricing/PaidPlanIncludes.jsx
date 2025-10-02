@@ -153,17 +153,17 @@ export default function PaidPlanIncludes() {
           <div className="w-full md:w-[30%] flex items-center justify-between mt-8 bg-[#F8FBFF] rounded-full h-14">
           {/* Prev Button */}
           <button className="custom-prev flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
-            ←
+            <Image src="/arrow-1.svg" alt="arrow" width={40} height={40} className="scale-x-[-1] w-4" />
           </button>
 
           {/* Progress bar */}
-          <div className="custom-progress relative flex-1 mx-4 h-[4px] rounded-full bg-gray-300 overflow-hidden">
-            <div className="swiper-pagination-progressbar-fill bg-[#006DD3]"></div>
+          <div className="custom-progress relative flex-1 mx-4 h-[4px] bg-gray-300 overflow-hidden">
+            <div className="swiper-pagination-progressbar-fill bg-[#006DD3] rounded-none"></div>
           </div>
 
           {/* Next Button */}
           <button className="custom-next flex items-center justify-center w-15 h-15 rounded-full bg-black text-white disabled:text-[#B8DCFF] disabled:bg-[#E7F3FF]">
-            →
+            <Image src="/arrow-1.svg" alt="arrow" width={40} height={40} className="w-4" />
           </button>
         </div>
         </div>
